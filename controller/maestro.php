@@ -37,6 +37,7 @@
             $maestroDAO->update($data);
         }
 
+        //funcion delete
         function delete(){
             $matricula = $_POST['idEliminarMaestro'];
 
