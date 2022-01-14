@@ -1,10 +1,10 @@
 <?php
-    class MaestroDTO implements JsonSerializable {
-        private $id_maestro;
-        private $nombre_maestro;
-        private $apppat_maestro;
-        private $appmat_maestro;
-        private $edad_maestro;
+    class CalificacionDTO implements JsonSerializable {
+        private $id_calificacion;
+        private $nombre_alumno;
+        private $apppat_alumno;
+        private $appmat_alumno;
+        private $calificacion;
 
         public function __get($property){
             if(property_exists($this, $property)) {

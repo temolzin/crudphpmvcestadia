@@ -1,13 +1,13 @@
 <?php
     require 'view/menu.php';
     $menu = new Menu();
-    $menu->header('maestro');
+    $menu->header('calificacion');
 ?>
 <section class="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-right">
-                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegistrarMaestro'> <i class="fas fa-plus-circle"></i> Registrar Maestro </button>
+                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegistrarCalificacion'> <i class="fas fa-plus-circle"></i> Registrar Calificacion </button>
             </div>
         </div>
         <br>
@@ -15,18 +15,18 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Tabla Maestro</h3>
+                        <h3 class="card-title">Tabla Calificacion</h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="dataTableMaestro" name="dataTableMaestro" class="table table-bordered table-hover dt-responsive nowrap" style="width:100%">
+                        <table id="dataTableCalificacion" name="dataTableCalificacion" class="table table-bordered table-hover dt-responsive nowrap" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>ID</th>
                                     <th>Nombre</th>
                                     <th>Apellido Paterno</th>
                                     <th>Apellido Materno</th>
-                                    <th>Edad</th>
+                                    <th>Calificacion</th>
                                     <th>Opciones</th>
                                 </tr>
                             </thead>
@@ -40,13 +40,13 @@
 
 <!--*****************************************MODALS****************************************-->
 <!--------------------------------------------------------- Modal Registrar----------------------------------------------->
-<div class="modal fade" id="modalRegistrarMaestro" tabindex="-1" role="dialog" aria-labelledby="modalRegistrarMaestro" aria-hidden="true">
+<div class="modal fade" id="modalRegistrarCalificacion" tabindex="-1" role="dialog" aria-labelledby="modalRegistrarCalificacion" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-success">
                 <div class="card-header">
                     <div class="d-sm-flex align-items-center justify-content-between " >
-                        <h4 class="card-title">Maestro <small> &nbsp;(*) Campos requeridos</small></h4>
+                        <h4 class="card-title">Calificacion <small> &nbsp;(*) Campos requeridos</small></h4>
                         <button type="button" class="close  d-sm-inline-block text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <!---->
@@ -54,13 +54,13 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formRegistrarMaestro" name="formRegistrarMaestro" method="post">
+                <form role="form" id="formRegistrarCalificacion" name="formRegistrarCalificacion" method="post">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombreMaestro" name="nombreMaestro" placeholder="Nombre"/>
+                                    <input type="text" class="form-control" id="nombreAlumno" name="nombreAlumno" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -77,8 +77,8 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label>Edad (*)</label>
-                                    <input type="text" class="form-control" id="edad" name="edad" placeholder="Edad"/>
+                                    <label>Calificacion (*)</label>
+                                    <input type="text" class="form-control" id="calificacion" name="calificacion" placeholder="Calificacion"/>
                                 </div>
                             </div>
                         </div>
@@ -94,34 +94,27 @@
 </div>
 
 <!--------------------------------------------------------- Modal Actualizar----------------------------------------------->
-<div class="modal fade" id="modalActualizarMaestro" tabindex="-1" role="dialog" aria-labelledby="modalActualizarMaestro" aria-hidden="true">
+<div class="modal fade" id="modalActualizarCalificacion" tabindex="-1" role="dialog" aria-labelledby="modalActualizarCalificacion" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-warning">
                 <div class="card-header">
                     <div class="d-sm-flex align-items-center justify-content-between " >
-                        <h4 class="card-title">Maestro <small> &nbsp;(*) Campos requeridos</small></h4>
+                        <h4 class="card-title">Calificacion <small> &nbsp;(*) Campos requeridos</small></h4>
                         <button type="button" class="close  d-sm-inline-block text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <!---->
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formActualizarMaestro" name="formActualizarMaestro">
+                <form role="form" id="formActualizarCalificacion" name="formActualizarCalificacion">
                     <div class="card-body">
-                    <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label>Matrícula (*)</label>
-                                    <input type="text" class="form-control" id="idMaestroActualizar" name="idMaestroActualizar" placeholder="Matrícula"/>
-                                </div>
-                            </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombreMaestroActualizar" name="nombreMaestroActualizar" placeholder="Nombre"/>
+                                    <input type="text" class="form-control" id="nombreAlumnoActualizar" name="nombreAlumnoActualizar" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -138,8 +131,8 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label>Edad (*)</label>
-                                    <input type="text" class="form-control" id="edadActualizar" name="edadActualizar" placeholder="Edad"/>
+                                    <label>Calificacion (*)</label>
+                                    <input type="text" class="form-control" id="calificacionActualizar" name="calificacionActualizar" placeholder="Calificacion"/>
                                 </div>
                             </div>
                         </div>
@@ -154,14 +147,14 @@
     </div>
 </div>
 
-<!--------------------------------------------------------- Modal DetalleMaestro----------------------------------------------->
-<div class="modal fade" id="modalDetalleMaestro" tabindex="-1" role="dialog" aria-labelledby="modalDetalleMaestro" aria-hidden="true">
+<!--------------------------------------------------------- Modal DetalleCalificacion----------------------------------------------->
+<div class="modal fade" id="modalDetCalificacion" tabindex="-1" role="dialog" aria-labelledby="modalDetalleCalificacion" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-primary">
                 <div class="card-header">
                     <div class="d-sm-flex align-items-center justify-content-between " >
-                        <h4 class="card-title">Maestro <small> &nbsp;(*) Campos requeridos</small></h4>
+                        <h4 class="card-title">Calificacion <small> &nbsp;(*) Campos requeridos</small></h4>
                         <button type="button" class="close  d-sm-inline-block text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <!---->
@@ -171,18 +164,10 @@
                 <form role="form" id="formConsulta" name="formConsulta">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label>Matrícula (*)</label>
-                                    <input disabled type="text" class="form-control" id="idMaestroConsultar" name="idMaestroConsultar" placeholder="Matrícula"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" disabled class="form-control" id="nombreMaestroConsultar" name="nombreMaestroConsultar" placeholder="Nombre"/>
+                                    <input type="text" disabled class="form-control" id="nombreAlumnoConsultar" name="nombreAlumnoConsultar" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -199,8 +184,8 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label>Edad (*)</label>
-                                    <input type="text" disabled class="form-control" id="edadConsultar" name="edadConsultar" placeholder="Edad"/>
+                                    <label>Calificacion (*)</label>
+                                    <input type="text" disabled class="form-control" id="calificacionConsultar" name="calificacionConsultar" placeholder="Calificacion"/>
                                 </div>
                             </div>
                         </div>
@@ -214,8 +199,8 @@
     </div>
 </div>
 
-<!-- ****************************** Modal Eliminar Maestro *************************************************-->
-<div class="modal fade" id="modalEliminarMaestro" tabindex="-1" role="dialog" aria-labelledby="modalEliminarMaestro" aria-hidden="true">
+<!-- ****************************** Modal Eliminar Calificacion *************************************************-->
+<div class="modal fade" id="modalEliminarCalificacion" tabindex="-1" role="dialog" aria-labelledby="modalEliminarCalificacion" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header bg-danger">
@@ -224,9 +209,9 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form role="form" id="formEliminarMaestro" name="formActualizarMaestro">
-                <input type="text" hidden id="idEliminarMaestro" name="idEliminarMaestro">
-                <div class="modal-body text-center text-danger">¿Realmente deseas eliminar este Maestro?</div>
+            <form role="form" id="formEliminarCalificacion" name="formActualizarCalificacion">
+                <input type="text" hidden id="idEliminarCalificacion" name="idEliminarCalificacion">
+                <div class="modal-body text-center text-danger">¿Realmente deseas eliminar esta Calificacion?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                     <button class="btn btn-danger" type="submit">Eliminar</button>
@@ -243,29 +228,29 @@
 <script>
 
     $(document).ready(function (){
-        mostrarMaestros();
+        mostrarCalificacion();
         enviarFormularioRegistrar();
         enviarFormularioActualizar();
         eliminarRegistro();
     });
 
-    var mostrarMaestros = function() {
-        var tableMaestro = $('#dataTableMaestro').DataTable({
+    var mostrarCalificacion = function() {
+        var tableCalificacion = $('#dataTableCalificacion').DataTable({
             "processing": true,
             "ajax": {
-                "url": "<?php echo constant('URL');?>maestro/read"
+                "url": "<?php echo constant('URL');?>calificacion/read"
             },
             "columns": [
-                { "data": "id_maestro" },
-                { "data": "nombre_maestro" },
-                { "data": "apppat_maestro" },
-                { "data": "appmat_maestro" },
-                { "data": "edad_maestro" },
+                { "data": "id_calificacion" },
+                { "data": "nombre_alumno" },
+                { "data": "apppat_alumno" },
+                { "data": "appmat_alumno" },
+                { "data": "calificacion" },
                 {data:null,
                     "defaultContent":
-                        `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetalleMaestro' title="Ver Detalles"><i class="fa fa-eye"></i></button>
-                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalActualizarMaestro' title="Editar Datos"><i class="fa fa-edit"></i></button>
-                         <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalEliminarMaestro' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
+                        `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetalleCalificacion' title="Ver Detalles"><i class="fa fa-eye"></i></button>
+                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalActualizarCalificacion' title="Editar Datos"><i class="fa fa-edit"></i></button>
+                         <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalEliminarCalificacion' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
                 }
             ],
             responsive: true,
@@ -275,49 +260,49 @@
             buttons: ['copy', 'excel', 'csv', 'pdf', 'colvis'],
             dom: 'Bfltip'
         });
-        obtenerdatosDT(tableMaestro);
+        obtenerdatosDT(tableCalificacion);
     }
 
     var obtenerdatosDT = function (table) {
-        $('#dataTableMaestro tbody').on('click', 'tr', function() {
+        $('#dataTableCalificacion tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
-            var idEliminar = $('#idEliminarMaestro').val(data.id_maestro);
+            var idEliminar = $('#idEliminarCalificacion').val(data.id_calificacion);
 
-            var idActualizar = $("#idMaestroActualizar").val(data.id_maestro);
-            var nombreActualizar = $("#nombreMaestroActualizar").val(data.nombre_maestro);
-            var apellidoPatActualizar = $("#apellidoPaternoActualizar").val(data.apppat_maestro);
-            var apellidoMatActualizar = $("#apellidoMaternoActualizar").val(data.appmat_maestro);
-            var edadActualizar = $("#edadActualizar").val(data.edad_maestro);
+            var idActualizar = $("#idCalificacionActualizar").val(data.id_calificacion);
+            var nombreActualizar = $("#nombreAlumnoActualizar").val(data.nombre_alumno);
+            var apellidoPaternoActualizar = $("#apellidoPaternoActualizar").val(data.apppat_alumno);
+            var apellidoMaternoActualizar = $("#apellidoMaternoActualizar").val(data.appmat_alumno);
+            var calificacionActualizar = $("#calificacionActualizar").val(data.calificacion);
 
-            var idConsultar = $("#idMaestroConsultar").val(data.id_maestro);
-            var nombreConsulta = $("#nombreMaestroConsultar").val(data.nombre_maestro);
-            var apellidoPatConsulta = $("#apellidoPaternoConsultar").val(data.apppat_maestro);
-            var apellidoMatConsulta = $("#apellidoMaternoConsultar").val(data.appmat_maestro);
-            var edadConsulta = $("#edadConsultar").val(data.edad_maestro);
+            var idConsultar = $("#idCalificacionConsultar").val(data.id_calificacion);
+            var nombreConsulta = $("#nombreAlumnoConsultar").val(data.nombre_alumno);
+            var apellidoPaternoConsulta = $("#apellidoPaternoConsultar").val(data.apppat_alumno);
+            var apellidoMaternoConsulta = $("#apellidoMaternoConsultar").val(data.appmat_alumno);
+            var calificacionConsulta = $("#calificacionConsultar").val(data.calificacion);
         });
     }
 
     var enviarFormularioRegistrar = function () {
         $.validator.setDefaults({
             submitHandler: function () {
-                var datos = $('#formRegistrarMaestro').serialize();
+                var datos = $('#formRegistrarCalificacion').serialize();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo constant('URL');?>maestro/insert",
+                    url: "<?php echo constant('URL');?>calificacion/insert",
                     data: datos,
                     success: function (data) {
                         if (data == 'ok') {
                             Swal.fire(
                                 "¡Éxito!",
-                                "La Maestro ha sido registrado de manera correcta",
+                                "La Calificacion ha sido registrado de manera correcta",
                                 "success"
                             ).then(function () {
-                                window.location = "<?php echo constant('URL');?>maestro";
+                                window.location = "<?php echo constant('URL');?>calificacion";
                             })
                         } else {
                             Swal.fire(
                                 "¡Error!",
-                                "Ha ocurrido un error al registrar el Maestro. " + data,
+                                "Ha ocurrido un error al registrar la Calificacion. " + data,
                                 "error"
                             );
                         }
@@ -325,9 +310,9 @@
                 });
             }
         });
-        $('#formRegistrarMaestro').validate({
+        $('#formRegistrarCalificacion').validate({
             rules: {
-                nombreMaestro: {
+                nombreAlumno: {
                     required: true
                 },
                 apellidoPaterno: {
@@ -336,12 +321,12 @@
                 apellidoMaterno: {
                     required: true
                 },
-                edad: {
+                calidicacion: {
                     required: true
                 },
             },
             messages: {
-                nombreMaestro: {
+                nombreAlumno: {
                     required: "Ingrese su nombre"
                 },
                 apellidoPaterno: {
@@ -350,8 +335,8 @@
                 apellidoMaterno: {
                     required: "Ingrese su apellido materno"
                 },
-                edad: {
-                    required: "Ingrese su edad"
+                calificacion: {
+                    required: "Ingrese tu calificacion"
                 }
             },
             errorElement: 'span',
@@ -371,24 +356,24 @@
     var enviarFormularioActualizar = function () {
         $.validator.setDefaults({
             submitHandler: function () {
-                var datos = $('#formActualizarMaestro').serialize();
+                var datos = $('#formActualizarCalificacion').serialize();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo constant('URL');?>maestro/update",
+                    url: "<?php echo constant('URL');?>calificacion/update",
                     data: datos,
                     success: function (data) {
                         if (data == 'ok') {
                             Swal.fire(
                                 "¡Éxito!",
-                                "La Maestro ha sido Actualizado de manera correcta",
+                                "La Calificacion ha sido Actualizado de manera correcta",
                                 "success"
                             ).then(function () {
-                                window.location = "<?php echo constant('URL');?>maestro";
+                                window.location = "<?php echo constant('URL');?>calificacion";
                             })
                         } else {
                             Swal.fire(
                                 "¡Error!",
-                                "Ha ocurrido un error al Actualizar el Maestro. " + data,
+                                "Ha ocurrido un error al Actualizar la Calificacion. " + data,
                                 "error"
                             );
                         }
@@ -396,13 +381,9 @@
                 });
             }
         });
-        $('#formActualizarMaestro').validate({
+        $('#formActualizarCalificacion').validate({
             rules: {
-                idMaestroActualizar: {
-                    required: true,
-                    number: true
-                },
-                nombreMaestroActualizar: {
+                nombreAlumnoActualizar: {
                     required: true
                 },
                 apellidoPaternoActualizar: {
@@ -411,16 +392,12 @@
                 apellidoMaternoActualizar: {
                     required: true
                 },
-                edadActualizar: {
+                calificacionActualizar: {
                     required: true
                 }
             },
             messages: {
-                idMaestroActualizar: {
-                    required: "Ingrese usu matrícula",
-                    number: "Sólo números"
-                },
-                nombreMaestroActualizar: {
+                nombreAlumnoActualizar: {
                     required: "Ingrese su nombre"
                 },
                 apellidoPaternoActualizar: {
@@ -429,8 +406,8 @@
                 apellidoMaternoActualizar: {
                     required: "Ingrese su apellido materno"
                 },
-                edadActualizar: {
-                    required: "Ingrese su edad"
+                calificacionActualizar: {
+                    required: "Ingrese su calificacion"
                 }
             },
             errorElement: 'span',
@@ -448,26 +425,26 @@
     }
 
     var eliminarRegistro = function () {
-        $( "#formEliminarMaestro" ).submit(function( event ) {
+        $( "#formEliminarCalificacion" ).submit(function( event ) {
             event.preventDefault();
-            var datos = $('#formEliminarMaestro').serialize();
+            var datos = $('#formEliminarCalificacion').serialize();
             $.ajax({
                 type: "POST",
-                url: "<?php echo constant('URL');?>maestro/delete",
+                url: "<?php echo constant('URL');?>calificacion/delete",
                 data: datos,
                 success: function (data) {
                     if (data == 'ok') {
                         Swal.fire(
                             "¡Éxito!",
-                            "La Maestro ha sido eliminado correctamente",
+                            "La Calificacion ha sido eliminado correctamente",
                             "success"
                         ).then(function () {
-                            window.location = "<?php echo constant('URL');?>maestro";
+                            window.location = "<?php echo constant('URL');?>calificacion";
                         })
                     } else {
                         Swal.fire (
                             "¡Error!",
-                            "Ha ocurrido un error al eliminar al Maestro. " + data,
+                            "Ha ocurrido un error al eliminar la Calificacion. " + data,
                             "error"
                         );
                     }
@@ -477,7 +454,7 @@
     }
 
     /*var dataTableFunction = function () {
-        var table = $("#dataTableMaestro").DataTable({
+        var table = $("#dataTableCalificacion").DataTable({
             responsive: true,
             language: idiomaDataTable,
             lengthChange: true,
@@ -485,6 +462,6 @@
             dom: 'Bfltip'
         });
 
-        table.buttons().container().appendTo('#dataTableMaestro_wrapper .col-md-6:eq(0)');
+        table.buttons().container().appendTo('#dataTableCalificacion_wrapper .col-md-6:eq(0)');
     }*/
 </script>

@@ -19,10 +19,10 @@ CREATE TABLE alumno(
     apellidos_alumno varchar(50)
 );
 
-CREATE TABLE maestro(
-	id_maestro int primary key auto_increment,
-	nombre_maestro varchar(30),
-	apppat_maestro varchar(30),
-	appmat_maestro varchar(30),
-	edad_maestro varchar(2)
+CREATE TABLE calificacion(
+	id_calificacion int primary key auto_increment,
+	nombre_alumno varchar(30),
+	apppat_alumno varchar(30),
+	appmat_alumno varchar(30),
+	calificacion varchar(2)
 );

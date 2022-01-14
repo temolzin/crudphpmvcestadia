@@ -243,10 +243,10 @@
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a id="alumno" name="maestro" href="'.constant('URL').'maestro" class="nav-link">
+                            <a id="calificacion" name="calificacion" href="'.constant('URL').'calificacion" class="nav-link">
                               <i class="nav-icon fas fa-user"></i>
                               <p>
-                                Maestro
+                                Calificacion
                               </p>
                             </a>
                           </li>
