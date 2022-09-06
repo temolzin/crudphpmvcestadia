@@ -32,3 +32,10 @@ CREATE TABLE categoria(
     id_categoria int primary key auto_increment,
     nombre_categoria varchar(30)
 );
+
+CREATE TABLE libro(
+    id_libro int primary key auto_increment,
+    nombre_libro varchar(50),
+    precio_libro varchar(50),
+	autor_libro varchar(50)
+);
