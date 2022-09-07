@@ -25,7 +25,7 @@
         function update() {
             $nombre = $_POST['nombreLibroActualizar'];
             $precio = $_POST['precioLibroActualizar'];
-            $autor = $_POST['precioLibroActualizar'];
+            $autor = $_POST['autorLibroActualizar'];
             $id = $_POST['idLibroActualizar'];
             $data = array('nombreLibro' => $nombre, 'precioLibro' => $precio,'autorLibro' => $autor, 'idLibro'=>$id);
 

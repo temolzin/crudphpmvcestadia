@@ -14,11 +14,8 @@
 
         public function update($data)
         {
-<<<<<<< Updated upstream
-            $query = $this->db->conectar()->prepare('UPDATE libro SET  nombre_libro = :nombre_libro, apellidos_libro = :apellidos_libro WHERE id_libro = :id_libro');
-=======
+            
             $query = $this->db->conectar()->prepare('UPDATE libro SET  nombre_libro = :nombre_libro, precio_libro = :precio_libro, autor_libro = :autor_libro WHERE id_libro = :id_libro');
->>>>>>> Stashed changes
             $query->execute([':id_libro' => $data['idLibro'],':nombre_libro' => $data['nombreLibro'],':precio_libro' => $data['precioLibro'],':autor_libro' => $data['autorLibro']]);
             echo 'ok';
         }
@@ -34,26 +31,19 @@
         {
             require_once 'libroDTO.php';
             $query = "SELECT * FROM libro";
-<<<<<<< Updated upstream
-            $objLibros = array();
-=======
             $objLibro = array();
->>>>>>> Stashed changes
             foreach ($this->db->consultar($query) as $key => $value) {
                 $libro = new LibroDTO();
                 $libro->id_libro = $value['id_libro'];
                 $libro->nombre_libro = $value['nombre_libro'];
                 $libro->precio_libro = $value['precio_libro'];
                 $libro->autor_libro = $value['autor_libro'];
-<<<<<<< Updated upstream
-                $objLibros['data'][] = $libro;
-            }
-            echo json_encode($objLibros, JSON_UNESCAPED_UNICODE);
-=======
                 $objLibro['data'][] = $libro;
             }
             echo json_encode($objLibro, JSON_UNESCAPED_UNICODE);
->>>>>>> Stashed changes
+                $objLibro['data'][] = $libro;
+            }
+           
         }
-    }
+    
 ?>

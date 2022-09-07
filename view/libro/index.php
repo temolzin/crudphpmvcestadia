@@ -224,21 +224,14 @@
 <script>
 
     $(document).ready(function (){
-<<<<<<< Updated upstream
-        mostrarLibros();
-=======
         mostrarLibro();
->>>>>>> Stashed changes
         enviarFormularioRegistrar();
         enviarFormularioActualizar();
         eliminarRegistro();
     });
 
-<<<<<<< Updated upstream
-    var mostrarLibros = function() {
-=======
+
     var mostrarLibro = function() {
->>>>>>> Stashed changes
         var tableLibro = $('#dataTableLibro').DataTable({
             "processing": true,
             "ajax": {
