@@ -32,15 +32,25 @@ CREATE TABLE categoria(
     id_categoria int primary key auto_increment,
     nombre_categoria varchar(30)
 );
+<<<<<<< HEAD
 CREATE TABLE sucursal(
     id_sucursal int primary key auto_increment,
     nombre_sucursal varchar(50),
 	numero_sucursal varchar(30),
 	descripcion_sucursal varchar(50)
 );
+<<<<<<< Updated upstream
+=======
+=======
+
+>>>>>>> Stashed changes
 CREATE TABLE libro(
     id_libro int primary key auto_increment,
     nombre_libro varchar(50),
     precio_libro varchar(50),
 	autor_libro varchar(50)
+<<<<<<< Updated upstream
 );
+=======
+>>>>>>> 2a8387560df0ff0df6a704eb12d1f72689133af7
+>>>>>>> Stashed changes

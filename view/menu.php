@@ -275,17 +275,31 @@
                             </a>
                           </li>
                           <li class="nav-item">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
                             <a id="categoria" name="sucursal" href="'.constant('URL').'sucursal" class="nav-link">
                               <i class="nav-icon fas fa-store"></i>
                               <p>
                                 Sucursal
 =======
+=======
+                            <a id="sucursal" name="sucursal" href="'.constant('URL').'sucursal" class="nav-link">
+                              <i class="nav-icon fas fa-store"></i>
+                              <p>
+                                Sucursal
+                                </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+>>>>>>> Stashed changes
                             <a id="libro" name="libro" href="'.constant('URL').'libro" class="nav-link">
                               <i class="nav-icon fas fa-book"></i>
                               <p>
                                 Libro
+<<<<<<< Updated upstream
 >>>>>>> 2a8387560df0ff0df6a704eb12d1f72689133af7
+=======
+>>>>>>> Stashed changes
                               </p>
                             </a>
                           </li>
