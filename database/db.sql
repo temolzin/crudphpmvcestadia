@@ -38,3 +38,9 @@ CREATE TABLE sucursal(
 	numero_sucursal varchar(30),
 	descripcion_sucursal varchar(50)
 );
+CREATE TABLE libro(
+    id_libro int primary key auto_increment,
+    nombre_libro varchar(50),
+    precio_libro varchar(50),
+	autor_libro varchar(50)
+);

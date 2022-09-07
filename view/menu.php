@@ -275,10 +275,17 @@
                             </a>
                           </li>
                           <li class="nav-item">
+<<<<<<< HEAD
                             <a id="categoria" name="sucursal" href="'.constant('URL').'sucursal" class="nav-link">
                               <i class="nav-icon fas fa-store"></i>
                               <p>
                                 Sucursal
+=======
+                            <a id="libro" name="libro" href="'.constant('URL').'libro" class="nav-link">
+                              <i class="nav-icon fas fa-book"></i>
+                              <p>
+                                Libro
+>>>>>>> 2a8387560df0ff0df6a704eb12d1f72689133af7
                               </p>
                             </a>
                           </li>
