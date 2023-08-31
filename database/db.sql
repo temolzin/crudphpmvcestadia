@@ -38,3 +38,12 @@ CREATE TABLE sucursal(
 	numero_sucursal varchar(30),
 	descripcion_sucursal varchar(50)
 );
+
+CREATE TABLE lenguaje(
+	id_lenguaje int primary key auto_increment,
+	nombre_lenguaje varchar(50),
+	paradigma_lenguaje varchar(50),
+	creador_lenguaje varchar(50),
+	fecha_creacion_lenguaje date
+
+);

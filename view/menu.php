@@ -275,6 +275,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="lenguaje" name="lenguaje" href="'.constant('URL').'lenguaje" class="nav-link">
+                              <i class="nav-icon fas fa-code"></i>
+                              <p>
+                                Lenguaje
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="categoria" name="sucursal" href="'.constant('URL').'sucursal" class="nav-link">
                               <i class="nav-icon fas fa-store"></i>
                               <p>
