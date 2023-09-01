@@ -4,7 +4,6 @@
         {
             parent::__construct();
         }
-
         public function insert($data)
         {
             $query = $this->db->conectar()->prepare('INSERT INTO autos VALUES (:id_auto, :marca_auto, :modelo_auto, :color_auto, :anio_auto, :precio_auto)');
@@ -18,16 +17,12 @@
             ]);
             echo 'ok';
         }
-
-
-
         public function update($data)
         {
             $query = $this->db->conectar()->prepare('UPDATE autos SET  marca_auto = :marca_auto, modelo_auto = :modelo_auto, color_auto = :color_auto, anio_auto = :anio_auto, precio_auto = :precio_auto WHERE id_auto = :id_auto');
             $query->execute([':id_auto' => $data['idAuto'],':marca_auto' => $data['marcaAuto'],':modelo_auto' => $data['modeloAuto'],':color_auto' => $data['colorAuto'],':anio_auto' => $data['anioAuto'],':precio_auto' => $data['precioAuto'],]);
             echo 'ok';
         }
-        
 
         public function delete($id)
         {
