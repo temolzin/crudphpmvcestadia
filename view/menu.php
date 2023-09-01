@@ -275,10 +275,10 @@
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a id="lenguaje" name="lenguaje" href="'.constant('URL').'lenguaje" class="nav-link">
+                            <a id="lenguajeProgramacion" name="lenguajeProgramacion" href="'.constant('URL').'lenguajeProgramacion" class="nav-link">
                               <i class="nav-icon fas fa-code"></i>
                               <p>
-                                Lenguaje
+                                Lenguaje de Programación
                               </p>
                             </a>
                           </li>

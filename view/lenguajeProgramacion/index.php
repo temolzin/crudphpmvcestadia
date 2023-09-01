@@ -1,13 +1,13 @@
 <?php
     require 'view/menu.php';
     $menu = new Menu();
-    $menu->header('lenguaje');
+    $menu->header('lenguajeProgramacion');
 ?>
 <section class="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-right">
-                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegistrarLenguaje'> <i class="fas fa-plus-circle"></i> Registrar Lenguaje </button>
+                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegistrarlenguajeProgramacion'> <i class="fas fa-plus-circle"></i> Registrar Lenguaje de Programación </button>
             </div>
         </div>
         <br>
@@ -15,11 +15,11 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Tabla Lenguaje</h3>
+                        <h3 class="card-title">Tabla de Lenguajes de Programación</h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="dataTableLenguaje" name="dataTableLenguaje" class="table table-bordered table-hover dt-responsive nowrap" style="width:100%">
+                        <table id="dataTablelenguajeProgramacion" name="dataTablelenguajeProgramacion" class="table table-bordered table-hover dt-responsive nowrap" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -39,13 +39,13 @@
 
 <!--*****************************************MODALS****************************************-->
 <!--------------------------------------------------------- Modal Registrar----------------------------------------------->
-<div class="modal fade" id="modalRegistrarLenguaje" tabindex="-1" role="dialog" aria-labelledby="modalRegistrarLenguaje" aria-hidden="true">
+<div class="modal fade" id="modalRegistrarlenguajeProgramacion" tabindex="-1" role="dialog" aria-labelledby="modalRegistrarlenguajeProgramacion" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-success">
                 <div class="card-header">
                     <div class="d-sm-flex align-items-center justify-content-between " >
-                        <h4 class="card-title">Lenguaje de Programación <small> &nbsp;(*) Campos requeridos</small></h4>
+                        <h4 class="card-title">Registrar Lenguaje de Programación <small> &nbsp;(*) Campos requeridos</small></h4>
                         <button type="button" class="close  d-sm-inline-block text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <!---->
@@ -53,19 +53,19 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formRegistrarLenguaje" name="formRegistrarLenguaje" method="post">
+                <form role="form" id="formRegistrarlenguajeProgramacion" name="formRegistrarlenguajeProgramacion" method="post">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombreLenguaje" name="nombreLenguaje" placeholder="Nombre"/>
+                                    <input type="text" class="form-control" id="nombreLenguajeProgramacion" name="nombreLenguajeProgramacion" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Paradigma (*)</label>
-                                    <input type="text" class="form-control" id="paradigmaLenguaje" name="paradigmaLenguaje" placeholder="Paradigma"/>
+                                    <input type="text" class="form-control" id="paradigmaLenguajeProgramacion" name="paradigmaLenguajeProgramacion" placeholder="Paradigma"/>
                                 </div>
                             </div>
                         </div>
@@ -73,13 +73,13 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Creador (*)</label>
-                                    <input type="text" class="form-control" id="creadorLenguaje" name="creadorLenguaje" placeholder="Creador"/>
+                                    <input type="text" class="form-control" id="creadorLenguajeProgramacion" name="creadorLenguajeProgramacion" placeholder="Creador"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Fecha de Creación (*)</label>
-                                    <input type="date" class="form-control" id="fechaCreacionLenguaje" name="fechaCreacionLenguaje" />
+                                    <input type="date" class="form-control" id="fechaCreacionLenguajeProgramacion" name="fechaCreacionLenguajeProgramacion" />
                                 </div>
                             </div>
                         </div>
@@ -95,26 +95,26 @@
 </div>
 
 <!--------------------------------------------------------- Modal Actualizar----------------------------------------------->
-<div class="modal fade" id="modalActualizarLenguaje" tabindex="-1" role="dialog" aria-labelledby="modalActualizarLenguaje" aria-hidden="true">
+<div class="modal fade" id="modalActualizarlenguajeProgramacion" tabindex="-1" role="dialog" aria-labelledby="modalActualizarlenguajeProgramacion" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-warning">
                 <div class="card-header">
                     <div class="d-sm-flex align-items-center justify-content-between " >
-                        <h4 class="card-title">Lenguaje de Programación <small> &nbsp;(*) Campos requeridos</small></h4>
+                        <h4 class="card-title">Actualizar Lenguaje de Programación <small> &nbsp;(*) Campos requeridos</small></h4>
                         <button type="button" class="close  d-sm-inline-block text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <!---->
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formActualizarLenguaje" name="formActualizarLenguaje">
+                <form role="form" id="formActualizarlenguajeProgramacion" name="formActualizarlenguajeProgramacion">
                     <div class="card-body">
                         <div style="display: none;" class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Matrícula (*)</label>
-                                    <input type="text" class="form-control" id="idLenguajeActualizar" name="idLenguajeActualizar" placeholder="Id Lenguaje"/>
+                                    <input type="text" class="form-control" id="idLenguajeProgramacionActualizar" name="idLenguajeProgramacionActualizar" placeholder="Id lenguajeProgramacion"/>
                                 </div>
                             </div>
                         </div>
@@ -122,13 +122,13 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombreLenguajeActualizar" name="nombreLenguajeActualizar" placeholder="Nombre"/>
+                                    <input type="text" class="form-control" id="nombreLenguajeProgramacionActualizar" name="nombreLenguajeProgramacionActualizar" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Paradigma (*)</label>
-                                    <input type="text" class="form-control" id="paradigmaLenguajeActualizar" name="paradigmaLenguajeActualizar" placeholder="Paradigma"/>
+                                    <input type="text" class="form-control" id="paradigmaLenguajeProgramacionActualizar" name="paradigmaLenguajeProgramacionActualizar" placeholder="Paradigma"/>
                                 </div>
                             </div>
                         </div>
@@ -136,13 +136,13 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Creador (*)</label>
-                                    <input type="text" class="form-control" id="creadorLenguajeActualizar" name="creadorLenguajeActualizar" placeholder="Creador"/>
+                                    <input type="text" class="form-control" id="creadorLenguajeProgramacionActualizar" name="creadorLenguajeProgramacionActualizar" placeholder="Creador"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Fecha de Creación (*)</label>
-                                    <input type="date" class="form-control" id="fechaCreacionActualizar" name="fechaCreacionActualizar" />
+                                    <input type="date" class="form-control" id="fechaCreacionLenguajeProgramacionActualizar" name="fechaCreacionLenguajeProgramacionActualizar" />
                                 </div>
                             </div>
                         </div>
@@ -157,14 +157,14 @@
     </div>
 </div>
 
-<!--------------------------------------------------------- Modal DetalleLenguaje----------------------------------------------->
-<div class="modal fade" id="modalDetalleLenguaje" tabindex="-1" role="dialog" aria-labelledby="modalDetalleLenguaje" aria-hidden="true">
+<!--------------------------------------------------------- Modal DetallelenguajeProgramacion----------------------------------------------->
+<div class="modal fade" id="modalDetallelenguajeProgramacion" tabindex="-1" role="dialog" aria-labelledby="modalDetallelenguajeProgramacion" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-primary">
                 <div class="card-header">
                     <div class="d-sm-flex align-items-center justify-content-between " >
-                        <h4 class="card-title">Lenguaje <small> &nbsp;(*) Campos requeridos</small></h4>
+                        <h4 class="card-title">Detalle del Lenguaje de Programación <small> &nbsp;(*) Campos requeridos</small></h4>
                         <button type="button" class="close  d-sm-inline-block text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <!---->
@@ -177,7 +177,7 @@
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Matrícula (*)</label>
-                                    <input disabled type="text" class="form-control" id="idLenguajeConsultar" name="idLenguajeConsultar" placeholder="Id Lenguaje" readonly/>
+                                    <input disabled type="text" class="form-control" id="idLenguajeProgramacionConsultar" name="idLenguajeProgramacionConsultar" placeholder="Id lenguajeProgramacion" readonly/>
                                 </div>
                             </div>
                         </div>
@@ -185,13 +185,13 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombreLenguajeConsultar" name="nombreLenguajeConsultar" placeholder="Nombre" readonly/>
+                                    <input type="text" class="form-control" id="nombreLenguajeProgramacionConsultar" name="nombreLenguajeProgramacionConsultar" placeholder="Nombre" readonly/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Paradigma (*)</label>
-                                    <input type="text" class="form-control" id="paradigmaLenguajeConsultar" name="paradigmaLenguajeConsultar" placeholder="Paradigma" readonly/>
+                                    <input type="text" class="form-control" id="paradigmaLenguajeProgramacionConsultar" name="paradigmaLenguajeProgramacionConsultar" placeholder="Paradigma" readonly/>
                                 </div>
                             </div>
                         </div>
@@ -199,13 +199,13 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Creador (*)</label>
-                                    <input type="text" class="form-control" id="creadorLenguajeConsultar" name="creadorLenguajeConsultar" placeholder="Creador" readonly/>
+                                    <input type="text" class="form-control" id="creadorLenguajeProgramacionConsultar" name="creadorLenguajeProgramacionConsultar" placeholder="Creador" readonly/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Fecha de Creación (*)</label>
-                                    <input type="date" class="form-control" id="fechaCreacionLenguajeConsultar" name="fechaCreacionLenguajeConsultar" readonly/>
+                                    <input type="date" class="form-control" id="fechaCreacionLenguajeProgramacionConsultar" name="fechaCreacionLenguajeProgramacionConsultar" readonly/>
                                 </div>
                             </div>
                         </div>
@@ -219,8 +219,8 @@
     </div>
 </div>
 
-<!-- ****************************** Modal Eliminar Lenguaje *************************************************-->
-<div class="modal fade" id="modalEliminarLenguaje" tabindex="-1" role="dialog" aria-labelledby="modalEliminarLenguaje" aria-hidden="true">
+<!-- ****************************** Modal Eliminar lenguajeProgramacion *************************************************-->
+<div class="modal fade" id="modalEliminarlenguajeProgramacion" tabindex="-1" role="dialog" aria-labelledby="modalEliminarlenguajeProgramacion" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header bg-danger">
@@ -229,9 +229,9 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form role="form" id="formEliminarLenguaje" name="formActualizarLenguaje">
-                <input type="text" hidden id="idEliminarLenguaje" name="idEliminarLenguaje">
-                <div class="modal-body text-center text-danger">¿Realmente deseas eliminar este Lenguaje?</div>
+            <form role="form" id="formEliminarLenguajeProgramacion" name="formActualizarLenguajeProgramacion">
+                <input type="text" hidden id="idEliminarLenguajeProgramacion" name="idEliminarLenguajeProgramacion">
+                <div class="modal-body text-center text-danger">¿Realmente deseas eliminar este lenguajeProgramacion?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                     <button class="btn btn-danger" type="submit">Eliminar</button>
@@ -248,29 +248,29 @@
 <script>
 
     $(document).ready(function (){
-        mostrarLenguajes();
+        mostrarlenguajeProgramacions();
         enviarFormularioRegistrar();
         enviarFormularioActualizar();
         eliminarRegistro();
     });
 
-    var mostrarLenguajes = function() {
-        var tableLenguaje = $('#dataTableLenguaje').DataTable({
+    var mostrarlenguajeProgramacions = function() {
+        var tablelenguajeProgramacion = $('#dataTablelenguajeProgramacion').DataTable({
             "processing": true,
             "ajax": {
-                "url": "<?php echo constant('URL');?>Lenguaje/read"
+                "url": "<?php echo constant('URL');?>lenguajeProgramacion/read"
             },
             "columns": [
-                { "data": "id_lenguaje" },
-                { "data": "nombre_lenguaje" },
-                { "data": "paradigma_lenguaje" },
-                { "data": "creador_lenguaje" },
-                { "data": "fecha_creacion_lenguaje" },
+                { "data": "id_lenguajeProgramacion" },
+                { "data": "nombre_lenguajeProgramacion" },
+                { "data": "paradigma_lenguajeProgramacion" },
+                { "data": "creador_lenguajeProgramacion" },
+                { "data": "fecha_creacion_lenguajeProgramacion" },
                 {data:null,
                     "defaultContent":
-                        `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetalleLenguaje' title="Ver Detalles"><i class="fa fa-eye"></i></button>
-                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalActualizarLenguaje' title="Editar Datos"><i class="fa fa-edit"></i></button>
-                         <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalEliminarLenguaje' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
+                        `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetallelenguajeProgramacion' title="Ver Detalles"><i class="fa fa-eye"></i></button>
+                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalActualizarlenguajeProgramacion' title="Editar Datos"><i class="fa fa-edit"></i></button>
+                         <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalEliminarlenguajeProgramacion' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
                 }
             ],
             responsive: true,
@@ -280,49 +280,49 @@
             buttons: ['copy', 'excel', 'csv', 'pdf', 'colvis'],
             dom: 'Bfltip'
         });
-        obtenerdatosDT(tableLenguaje);
+        obtenerdatosDT(tablelenguajeProgramacion);
     }
 
     var obtenerdatosDT = function (table) {
-        $('#dataTableLenguaje tbody').on('click', 'tr', function() {
+        $('#dataTablelenguajeProgramacion tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
-            var idEliminar = $('#idEliminarLenguaje').val(data.id_lenguaje);
+            var idEliminar = $('#idEliminarLenguajeProgramacion').val(data.id_lenguajeProgramacion);
 
-            var idActualizar = $("#idLenguajeActualizar").val(data.id_lenguaje);
-            var nombreLenguajeActualizar = $("#nombreLenguajeActualizar").val(data.nombre_lenguaje);
-            var apellido = $("#paradigmaLenguajeActualizar").val(data.paradigma_lenguaje);
-            var nombreLenguajeActualizar = $("#creadorLenguajeActualizar").val(data.creador_lenguaje);
-            var apellido = $("#fechaCreacionActualizar").val(data.fecha_creacion_lenguaje);
+            var idActualizar = $("#idLenguajeProgramacionActualizar").val(data.id_lenguajeProgramacion);
+            var nombreActualizar = $("#nombreLenguajeProgramacionActualizar").val(data.nombre_lenguajeProgramacion);
+            var paradigmaActualizar = $("#paradigmaLenguajeProgramacionActualizar").val(data.paradigma_lenguajeProgramacion);
+            var creadorActualizar = $("#creadorLenguajeProgramacionActualizar").val(data.creador_lenguajeProgramacion);
+            var fechaActualizar = $("#fechaCreacionLenguajeProgramacionActualizar").val(data.fecha_creacion_lenguajeProgramacion);
 
-            var idConsulta = $("#idLenguajeConsultar").val(data.id_lenguaje);
-            var nombreConsulta = $("#nombreLenguajeConsultar").val(data.nombre_lenguaje);
-            var apellidoConsulta = $("#paradigmaLenguajeConsultar").val(data.paradigma_lenguaje);
-            var nombreConsulta = $("#creadorLenguajeConsultar").val(data.creador_lenguaje);
-            var apellidoConsulta = $("#fechaCreacionLenguajeConsultar").val(data.fecha_creacion_lenguaje)
+            var idConsulta = $("#idLenguajeProgramacionConsultar").val(data.id_lenguajeProgramacion);
+            var nombreConsulta = $("#nombreLenguajeProgramacionConsultar").val(data.nombre_lenguajeProgramacion);
+            var paradigmaConsulta = $("#paradigmaLenguajeProgramacionConsultar").val(data.paradigma_lenguajeProgramacion);
+            var creadorConsulta = $("#creadorLenguajeProgramacionConsultar").val(data.creador_lenguajeProgramacion);
+            var fechaConsulta = $("#fechaCreacionLenguajeProgramacionConsultar").val(data.fecha_creacion_lenguajeProgramacion)
         });
     }
 
     var enviarFormularioRegistrar = function () {
         $.validator.setDefaults({
             submitHandler: function () {
-                var datos = $('#formRegistrarLenguaje').serialize();
+                var datos = $('#formRegistrarlenguajeProgramacion').serialize();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo constant('URL');?>Lenguaje/insert",
+                    url: "<?php echo constant('URL');?>lenguajeProgramacion/insert",
                     data: datos,
                     success: function (data) {
                         if (data == 'ok') {
                             Swal.fire(
                                 "¡Éxito!",
-                                "La Lenguaje ha sido registrado de manera correcta",
+                                "El lenguajeProgramacion ha sido registrado de manera correcta",
                                 "success"
                             ).then(function () {
-                                window.location = "<?php echo constant('URL');?>Lenguaje";
+                                window.location = "<?php echo constant('URL');?>lenguajeProgramacion";
                             })
                         } else {
                             Swal.fire(
                                 "¡Error!",
-                                "Ha ocurrido un error al registrar el Lenguaje. " + data,
+                                "Ha ocurrido un error al registrar el lenguajeProgramacion. " + data,
                                 "error"
                             );
                         }
@@ -330,26 +330,26 @@
                 });
             }
         });
-        $('#formRegistrarLenguaje').validate({
+        $('#formRegistrarlenguajeProgramacion').validate({
             rules: {
-                nombreLenguaje: {
+                nombrelenguajeProgramacion: {
                     required: true
                 },
-                apellidosLenguaje: {
+                apellidoslenguajeProgramacion: {
                     required: true
                 },
             },
             messages: {
-                nombreLenguaje: {
+                nombrelenguajeProgramacion: {
                     required: "Ingresa un nombre"
                 },
-                paradigmaLenguaje: {
+                paradigmalenguajeProgramacion: {
                     required: "Ingresa un partadigma"
                 },
-                creadorLenguaje: {
+                creadorlenguajeProgramacion: {
                     required: "Ingresa un creador"
                 },
-                fechaCreacionLenguaje: {
+                fechaCreacionlenguajeProgramacion: {
                     required: "Ingresa una fecha de creación"
                 }
             },
@@ -370,24 +370,24 @@
     var enviarFormularioActualizar = function () {
         $.validator.setDefaults({
             submitHandler: function () {
-                var datos = $('#formActualizarLenguaje').serialize();
+                var datos = $('#formActualizarlenguajeProgramacion').serialize();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo constant('URL');?>Lenguaje/update",
+                    url: "<?php echo constant('URL');?>lenguajeProgramacion/update",
                     data: datos,
                     success: function (data) {
                         if (data == 'ok') {
                             Swal.fire(
                                 "¡Éxito!",
-                                "La Lenguaje ha sido Actualizado de manera correcta",
+                                "El lenguajeProgramacion ha sido Actualizado de manera correcta",
                                 "success"
                             ).then(function () {
-                                window.location = "<?php echo constant('URL');?>Lenguaje";
+                                window.location = "<?php echo constant('URL');?>lenguajeProgramacion";
                             })
                         } else {
                             Swal.fire(
                                 "¡Error!",
-                                "Ha ocurrido un error al Actualizar el Lenguaje. " + data,
+                                "Ha ocurrido un error al Actualizar el lenguajeProgramacion. " + data,
                                 "error"
                             );
                         }
@@ -395,26 +395,26 @@
                 });
             }
         });
-        $('#formActualizarLenguaje').validate({
+        $('#formActualizarlenguajeProgramacion').validate({
             rules: {
-                nombreLenguajeActualizar: {
+                nombrelenguajeProgramacionActualizar: {
                     required: true
                 },
-                apellidosLenguajeActualizar: {
+                apellidoslenguajeProgramacionActualizar: {
                     required: true
                 }
             },
             messages: {
-                nombreLenguaje: {
+                nombrelenguajeProgramacion: {
                     required: "Ingresa un nombre"
                 },
-                paradigmaLenguaje: {
+                paradigmalenguajeProgramacion: {
                     required: "Ingresa un partadigma"
                 },
-                creadorLenguaje: {
+                creadorlenguajeProgramacion: {
                     required: "Ingresa un creador"
                 },
-                fechaCreacionLenguaje: {
+                fechaCreacionlenguajeProgramacion: {
                     required: "Ingresa una fecha de creación"
                 }
             },
@@ -433,26 +433,26 @@
     }
 
     var eliminarRegistro = function () {
-        $( "#formEliminarLenguaje" ).submit(function( event ) {
+        $( "#formEliminarLenguajeProgramacion" ).submit(function( event ) {
             event.preventDefault();
-            var datos = $('#formEliminarLenguaje').serialize();
+            var datos = $('#formEliminarLenguajeProgramacion').serialize();
             $.ajax({
                 type: "POST",
-                url: "<?php echo constant('URL');?>Lenguaje/delete",
+                url: "<?php echo constant('URL');?>lenguajeProgramacion/delete",
                 data: datos,
                 success: function (data) {
                     if (data == 'ok') {
                         Swal.fire(
                             "¡Éxito!",
-                            "El Lenguaje ha sido eliminado correctamente",
+                            "El lenguaje Programacion ha sido eliminado correctamente",
                             "success"
                         ).then(function () {
-                            window.location = "<?php echo constant('URL');?>Lenguaje";
+                            window.location = "<?php echo constant('URL');?>lenguajeProgramacion";
                         })
                     } else {
                         Swal.fire (
                             "¡Error!",
-                            "Ha ocurrido un error al eliminar el Lenguaje. " + data,
+                            "Ha ocurrido un error al eliminar el lenguajeProgramacion. " + data,
                             "error"
                         );
                     }
@@ -462,7 +462,7 @@
     }
 
     /*var dataTableFunction = function () {
-        var table = $("#dataTableLenguaje").DataTable({
+        var table = $("#dataTablelenguajeProgramacion").DataTable({
             responsive: true,
             language: idiomaDataTable,
             lengthChange: true,
@@ -470,6 +470,6 @@
             dom: 'Bfltip'
         });
 
-        table.buttons().container().appendTo('#dataTableLenguaje_wrapper .col-md-6:eq(0)');
+        table.buttons().container().appendTo('#dataTablelenguajeProgramacion_wrapper .col-md-6:eq(0)');
     }*/
 </script>

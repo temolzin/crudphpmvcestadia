@@ -1,10 +1,10 @@
 <?php
-    class LenguajeDTO implements JsonSerializable {
-        private $id_lenguaje;
-        private $nombre_lenguaje;
-        private $paradigma_lenguaje;
-        private $creador_lenguaje;
-        private $fecha_creacion_lenguaje;
+    class LenguajeProgramacionDTO implements JsonSerializable {
+        private $id_lenguajeProgramacion;
+        private $nombre_lenguajeProgramacion;
+        private $paradigma_lenguajeProgramacion;
+        private $creador_lenguajeProgramacion;
+        private $fecha_creacion_lenguajeProgramacion;
 
         public function __get($property){
             if(property_exists($this, $property)) {
