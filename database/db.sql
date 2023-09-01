@@ -46,3 +46,12 @@ CREATE TABLE lenguajeProgramacion(
 	creador_lenguajeProgramacion varchar(50),
 	fecha_creacion_lenguajeProgramacion date
 );
+
+CREATE TABLE autos(
+	id_auto int primary key auto_increment,
+	marca_auto varchar(30),
+	modelo_auto varchar(30),
+	color_auto varchar(10),
+	anio_auto varchar(30),
+	precio_auto varchar(30)
+);

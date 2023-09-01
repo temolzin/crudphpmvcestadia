@@ -291,6 +291,15 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="auto" name="auto" href="'.constant('URL').'auto" class="nav-link">
+                            <i class="nav-icon  fas fa-car"></i>
+                              <p>
+                                Auto
+                              </p>
+                            </a>
+                          </li>
+
+                          <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
                               <p>
