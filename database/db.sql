@@ -1,5 +1,5 @@
-create database estructuramvc;
-use estructuramvc;
+create database crudpeliculas;
+use crudpeliculas;
 create table alumno (
     id_alumno int primary key auto_increment,
     nombre_alumno varchar(30),
@@ -60,4 +60,12 @@ CREATE TABLE deporte(
     nombre_deporte varchar(50),
     descripcion_deporte varchar(30),
     num_participantes_deporte varchar(50)
+);
+
+CREATE TABLE pelicula(
+    id_pelicula int primary key auto_increment,
+    nombre_pelicula varchar(50),
+	genero varchar(30),
+	fecha_lanzamiento DATE,
+	descripcion varchar(100)
 );

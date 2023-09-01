@@ -1,8 +1,8 @@
 <?php
     define('URL', 'http://localhost/crudphpmvcestadia/');
     define('HOST', 'localhost');
-    define('DB', 'estructuramvc');
+    define('DB', 'crudpeliculas');
     define('USER', 'root');
-    define('PASSWORD', '');
+    define('PASSWORD', '12345');
     define('CHARSET', 'utf8mb4');
 ?>
