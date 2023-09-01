@@ -291,6 +291,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="deporte" name="deporte" href="'.constant('URL').'deporte" class="nav-link">
+                              <i class="nav-icon fas fa-futbol"></i>
+                              <p>
+                                Deporte
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="auto" name="auto" href="'.constant('URL').'auto" class="nav-link">
                             <i class="nav-icon  fas fa-car"></i>
                               <p>
