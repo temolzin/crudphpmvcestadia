@@ -27,6 +27,7 @@
                                     <th>Paradigma</th>
                                     <th>Creador</th>
                                     <th>Fecha de Creación</th>
+                                    <th>Opciones</th>
                                 </tr>
                             </thead>
                         </table>
