@@ -291,6 +291,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="pelicula" name="pelicula" href="'.constant('URL').'pelicula" class="nav-link">
+                              <i class="nav-icon fas fa-store"></i>
+                              <p>
+                                Pelicula
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="auto" name="auto" href="'.constant('URL').'auto" class="nav-link">
                             <i class="nav-icon  fas fa-car"></i>
                               <p>
