@@ -434,15 +434,4 @@
         });
     }
 
-    /*var dataTableFunction = function () {
-        var table = $("#dataTableAlumno").DataTable({
-            responsive: true,
-            language: idiomaDataTable,
-            lengthChange: true,
-            buttons: ['copy', 'excel', 'csv', 'pdf', 'colvis'],
-            dom: 'Bfltip'
-        });
-
-        table.buttons().container().appendTo('#dataTableAlumno_wrapper .col-md-6:eq(0)');
-    }*/
 </script>

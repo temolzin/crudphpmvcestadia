@@ -283,14 +283,6 @@
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a id="categoria" name="sucursal" href="'.constant('URL').'sucursal" class="nav-link">
-                              <i class="nav-icon fas fa-store"></i>
-                              <p>
-                                Sucursal
-                              </p>
-                            </a>
-                          </li>
-                          <li class="nav-item">
                             <a id="deporte" name="deporte" href="'.constant('URL').'deporte" class="nav-link">
                               <i class="nav-icon fas fa-futbol"></i>
                               <p>

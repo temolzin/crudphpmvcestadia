@@ -58,6 +58,6 @@ CREATE TABLE autos(
 CREATE TABLE deporte(
     id_deporte int primary key auto_increment,
     nombre_deporte varchar(50),
-	descripcion_deporte varchar(30),
-	num_participantes_deporte varchar(50)
+    descripcion_deporte varchar(30),
+    num_participantes_deporte varchar(50)
 );
