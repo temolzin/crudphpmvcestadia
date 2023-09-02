@@ -241,14 +241,14 @@
 ?>
 
 <script>
-    //Este es para que se ejecuten las funciones cuando el html este correctamente
+
     $(document).ready(function (){
         mostrarPeliculas();
         enviarFormularioRegistrar();
         enviarFormularioActualizar();
         eliminarRegistro();
     });
-    //Esta funcion es mostrar los datos en el datatable con solicitud ajax
+
     var mostrarPeliculas = function() {
         var tablePelicula = $('#dataTablePelicula').DataTable({
             "processing": true,
@@ -277,7 +277,7 @@
         });
         obtenerdatosDT(tablePelicula);
     }
-    //Esta funcion es para obtener lo datos especificos dependiendo los campos seleccionados
+
     var obtenerdatosDT = function (table) { 
         $('#dataTablePelicula tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
@@ -296,7 +296,7 @@
             var descripcionConsulta = $("#descripcionPeliculaConsultar").val(data.descripcion);
         });
     }
-    //Esta función se encarga del envío de un formulario para registrar una nueva película
+    
     var enviarFormularioRegistrar = function () {
         $.validator.setDefaults({
             submitHandler: function () {

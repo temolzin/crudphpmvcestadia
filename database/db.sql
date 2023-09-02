@@ -32,6 +32,7 @@ CREATE TABLE categoria(
     id_categoria int primary key auto_increment,
     nombre_categoria varchar(30)
 );
+
 CREATE TABLE sucursal(
     id_sucursal int primary key auto_increment,
     nombre_sucursal varchar(50),
