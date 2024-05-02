@@ -306,6 +306,14 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
+                            <a id="book" name="book" href="'.constant('URL').'book" class="nav-link">
+                            <i class="nav-icon fa fa-book"></i>
+                              <p>
+                                Libro
+                              </p>
+                            </a>
+                          </li>
 
                           <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
