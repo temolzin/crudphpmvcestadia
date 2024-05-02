@@ -70,3 +70,8 @@ CREATE TABLE pelicula(
 	fecha_lanzamiento DATE,
 	descripcion varchar(100)
 );
+
+CREATE TABLE book(
+    id int primary key auto_increment,
+    name varchar(30)
+);
