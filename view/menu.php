@@ -306,6 +306,14 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
+                          <a id="cacke" name="cake" href="'.constant('URL').'cake" class="nav-link">
+                          <i class="nav-icon fas fa-birthday-cake"></i>
+                            <p>
+                              Pasteles
+                            </p>
+                          </a>
+                        </li>
 
                           <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">

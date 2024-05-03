@@ -70,3 +70,12 @@ CREATE TABLE pelicula(
 	fecha_lanzamiento DATE,
 	descripcion varchar(100)
 );
+
+CREATE TABLE cake(
+    id_cake int primary key auto_increment,
+    name_cake varchar(50),
+    flavor_cake varchar(70),
+    amount_cake varchar(20),
+    price_cake varchar(20),
+	date_Cake date	
+);
