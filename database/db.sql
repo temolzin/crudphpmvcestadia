@@ -72,6 +72,14 @@ CREATE TABLE pelicula(
 	descripcion varchar(100)
 );
 
+CREATE TABLE fruit(
+    id_fruit int primary key auto_increment,
+    name_fruit varchar(50),
+    description_fruit varchar(30),
+    weight_fruit varchar(50),
+	color_fruit varchar(50)
+);
+
 CREATE TABLE plant(
 	plant_id int primary key auto_increment,
 	plant_name varchar(30),
