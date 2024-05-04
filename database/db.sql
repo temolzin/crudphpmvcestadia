@@ -71,6 +71,7 @@ CREATE TABLE pelicula(
 	fecha_lanzamiento DATE,
 	descripcion varchar(100)
 );
+
 CREATE TABLE fruit(
     id_fruit int primary key auto_increment,
     name_fruit varchar(50),
@@ -78,6 +79,7 @@ CREATE TABLE fruit(
     weight_fruit varchar(50),
 	color_fruit varchar(50)
 );
+
 CREATE TABLE plant(
 	plant_id int primary key auto_increment,
 	plant_name varchar(30),
@@ -85,4 +87,3 @@ CREATE TABLE plant(
 	plant_availability varchar(30),
 	plant_size varchar(2)
 );
-
