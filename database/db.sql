@@ -56,6 +56,7 @@ CREATE TABLE autos(
 	anio_auto varchar(30),
 	precio_auto varchar(30)
 );
+
 CREATE TABLE deporte(
     id_deporte int primary key auto_increment,
     nombre_deporte varchar(50),
@@ -69,4 +70,12 @@ CREATE TABLE pelicula(
 	genero varchar(30),
 	fecha_lanzamiento DATE,
 	descripcion varchar(100)
+);
+
+CREATE TABLE plant(
+	plant_id int primary key auto_increment,
+	plant_name varchar(30),
+	plant_price varchar(4),
+	plant_availability varchar(30),
+	plant_size varchar(2)
 );

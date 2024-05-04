@@ -306,6 +306,14 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
+                            <a id="plant" name="plant" href="'.constant('URL').'plant" class="nav-link">
+                              <i class="nav-icon fa fa-leaf"></i>
+                              <p>
+                                Plantas
+                              </p>
+                            </a>
+                          </li>
 
                           <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
