@@ -87,3 +87,11 @@ CREATE TABLE perro(
 	edad_perro int (2),
 	sexo_perro varchar(10)
 );
+
+CREATE TABLE pastel(
+	pastel_id int primary key auto_increment,
+	tipo varchar(30),
+	precio decimal(9,2),
+	sabor varchar(30),
+	capas int(2)
+);
