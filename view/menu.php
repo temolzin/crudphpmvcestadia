@@ -314,6 +314,14 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
+                            <a id="mesa" name="mesa" href="'.constant('URL').'mesa" class="nav-link">
+                              <i class="nav-icon fa fa-stop"></i>
+                              <p>
+                                Mesas
+                              </p>
+                            </a>
+                          </li>
 
                           <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
