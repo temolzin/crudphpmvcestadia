@@ -79,3 +79,11 @@ CREATE TABLE plant(
 	plant_availability varchar(30),
 	plant_size varchar(2)
 );
+
+CREATE TABLE puerta(
+	puerta_id int primary key auto_increment,
+	puerta_material varchar(30),
+	puerta_precio decimal(9,2),
+	puerta_altura varchar(3),
+	puerta_anchura varchar(3)
+);
