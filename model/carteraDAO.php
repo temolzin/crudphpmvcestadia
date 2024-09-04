@@ -9,14 +9,14 @@
         public function insert($data)
         {
             $query = $this->db->conectar()->prepare('INSERT INTO cartera values (:id_cartera, :material, :color, :modelo, :marca)');
-            $query->execute([':id_cartera' => null, ':material' => $data['material_car'], ':color' => $data['color_car'], ':modelo' => $data['modelo_car'], ':marca' => $data['marca_car']]);
+            $query->execute([':id_cartera' => null, ':material' => $data['material_cartera'], ':color' => $data['color_cartera'], ':modelo' => $data['modelo_cartera'], ':marca' => $data['marca_cartera']]);
             echo 'ok';
         }
 
         public function update($data)
         {
             $query = $this->db->conectar()->prepare('UPDATE cartera SET  material = :material, color = :color, modelo = :modelo, marca = :marca WHERE id_cartera = :id_cartera');
-            $query->execute([':id_cartera' => $data['idCartera'], ':material' => $data['material_car'], ':color' => $data['color_car'], ':modelo' => $data['modelo_car'], ':marca' => $data['marca_car']]);
+            $query->execute([':id_cartera' => $data['idCartera'], ':material' => $data['material_cartera'], ':color' => $data['color_cartera'], ':modelo' => $data['modelo_cartera'], ':marca' => $data['marca_cartera']]);
             echo 'ok';
         }
 

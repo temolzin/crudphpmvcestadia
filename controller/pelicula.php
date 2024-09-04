@@ -1,5 +1,4 @@
 <?php
-
     class Pelicula extends Controller
     {
         function __construct()

@@ -80,15 +80,6 @@ CREATE TABLE plant(
 	plant_size varchar(2)
 );
 
-<<<<<<< HEAD
-CREATE TABLE cartera(
-    id_cartera int primary key auto_increment,
-    material varchar(50),
-    color varchar(30),
-    modelo varchar(50),
-    marca varchar(50)
-);
-=======
 CREATE TABLE perro(
 	id_perro int primary key auto_increment,
 	nombre_perro varchar(30),
@@ -96,4 +87,11 @@ CREATE TABLE perro(
 	edad_perro int (2),
 	sexo_perro varchar(10)
 );
->>>>>>> master
+
+CREATE TABLE cartera(
+    id_cartera int primary key auto_increment,
+    material varchar(50),
+    color varchar(30),
+    modelo varchar(50),
+    marca varchar(50)
+);
