@@ -80,6 +80,7 @@ CREATE TABLE plant(
 	plant_size varchar(2)
 );
 
+wallet/crud
 CREATE TABLE cartera(
     id_cartera int primary key auto_increment,
     material varchar(50),
@@ -87,3 +88,12 @@ CREATE TABLE cartera(
     modelo varchar(50),
     marca varchar(50)
 );
+
+CREATE TABLE perro(
+	id_perro int primary key auto_increment,
+	nombre_perro varchar(30),
+	raza_perro varchar(30),
+	edad_perro int (2),
+	sexo_perro varchar(10)
+);
+master
