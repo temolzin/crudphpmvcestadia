@@ -88,6 +88,22 @@ CREATE TABLE perro(
 	sexo_perro varchar(10)
 );
 
+CREATE TABLE mesa(
+	id_mesa int primary key auto_increment,
+	material varchar(30),
+	altura decimal(5,2),
+	acabado varchar(30),
+	precio decimal(9,2)
+);
+
+CREATE TABLE motos(
+    id_moto int primary key auto_increment,
+    marca varchar(50),
+	modelo varchar(30),
+	cc integer,
+	precio integer
+);
+
 CREATE TABLE puerta(
 	puerta_id int primary key auto_increment,
 	puerta_material varchar(30),
