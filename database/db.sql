@@ -103,3 +103,11 @@ CREATE TABLE mesa(
 	acabado varchar(30),
 	precio decimal(9,2)
 );
+
+CREATE TABLE motos(
+    id_moto int primary key auto_increment,
+    marca varchar(50),
+	modelo varchar(30),
+	cc integer,
+	precio integer
+);
