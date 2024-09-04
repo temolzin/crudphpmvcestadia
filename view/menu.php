@@ -323,6 +323,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="mesa" name="mesa" href="'.constant('URL').'mesa" class="nav-link">
+                              <i class="nav-icon fa fa-stop"></i>
+                              <p>
+                                Mesas
+                              </p>
+                            </a>
+                          </li>                          
+                          <li class="nav-item">
                             <a id="motos" name="motos" href="'.constant('URL').'motos" class="nav-link">
                               <i class="nav-icon fas fa-store"></i>
                               <p>
