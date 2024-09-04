@@ -1,10 +1,10 @@
 <?php
     class MotosDTO implements JsonSerializable {
-        private $id_motos;
-        private $marcas;
-        private $modelos;
-        private $ccs;
-        private $precios;
+        private $id_moto;
+        private $marca;
+        private $modelo;
+        private $cc;
+        private $precio;
 
         public function __get($property){
             if(property_exists($this, $property)) {

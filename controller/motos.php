@@ -13,9 +13,9 @@
         function insert() {
             $marca = $_POST['marca'];
             $modelo = $_POST['modelo'];
-            $css = $_POST['cc'];
+            $cc = $_POST['cc'];
             $precio = $_POST['precio'];
-            $data = array('marca' => $marca, 'modelo' => $modelo, 'cc' => $css, 'precio' => $precio);
+            $data = array('marca' => $marca, 'modelo' => $modelo, 'cc' => $cc, 'precio' => $precio);
 
             require 'model/motosDAO.php';
             $this->loadModel('MotosDAO');

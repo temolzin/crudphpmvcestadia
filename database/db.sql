@@ -89,9 +89,9 @@ CREATE TABLE perro(
 );
 
 CREATE TABLE motos(
-    id_motos int primary key auto_increment,
-    marcas varchar(50),
-	modelos varchar(30),
-	css integer,
-	precios integer
+    id_moto int primary key auto_increment,
+    marca varchar(50),
+	modelo varchar(30),
+	cc integer,
+	precio integer
 );

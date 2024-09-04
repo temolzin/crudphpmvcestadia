@@ -256,11 +256,11 @@
                 "url": "<?php echo constant('URL');?>motos/read"
             },
             "columns": [
-                { "data": "id_motos" },
-                { "data": "marcas" },
-                { "data": "modelos" },
+                { "data": "id_moto" },
+                { "data": "marca" },
+                { "data": "modelo" },
                 { "data": "ccs" },
-                { "data": "precios" },
+                { "data": "precio" },
                 {data: null,
                     "defaultContent":
                         `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetalleMotos' title="Ver Detalles"><i class="fa fa-eye"></i></button>
@@ -281,19 +281,19 @@
     var obtenerdatosDT = function (table) { 
         $('#dataTableMotos tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
-            var idEliminar = $('#idEliminarMotos').val(data.id_motos);
+            var idEliminar = $('#idEliminarMotos').val(data.id_moto);
 
-            var idActualizar = $("#idMotosActualizar").val(data.id_motos);
-            var marcaMotosActualizar = $("#marcaMotosActualizar").val(data.marcas);
-            var modeloMotosActualizar = $("#modeloMotosActualizar").val(data.modelos);
+            var idActualizar = $("#idMotosActualizar").val(data.id_moto);
+            var marcaMotosActualizar = $("#marcaMotosActualizar").val(data.marca);
+            var modeloMotosActualizar = $("#modeloMotosActualizar").val(data.modelo);
             var ccMotosActualizar = $("#ccMotosActualizar").val(data.ccs);
-            var precioMotosActualizar = $("#precioMotosActualizar").val(data.precios);
+            var precioMotosActualizar = $("#precioMotosActualizar").val(data.precio);
 
-            var idConsulta = $("#idMotosConsultar").val(data.id_motos);
-            var marcaConsulta = $("#marcaMotosConsultar").val(data.marcas);
-            var modeloConsulta = $("#modeloMotosConsultar").val(data.modelos);
+            var idConsulta = $("#idMotosConsultar").val(data.id_moto);
+            var marcaConsulta = $("#marcaMotosConsultar").val(data.marca);
+            var modeloConsulta = $("#modeloMotosConsultar").val(data.modelo);
             var ccConsulta = $("#ccMotosConsultar").val(data.ccs);
-            var precioConsulta = $("#precioMotosConsultar").val(data.precios);
+            var precioConsulta = $("#precioMotosConsultar").val(data.precio);
         });
     }
     

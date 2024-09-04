@@ -7,22 +7,22 @@
 
         public function insert($data)
         {
-            $query = $this->db->conectar()->prepare('INSERT INTO motos values (:id_motos, :marcas, :modelos, :css, :precios)');
-            $query->execute([':id_motos' => null, ':marcas' => $data['marca'], ':modelos' => $data['modelo'], ':css' => $data['cc'], ':precios' => $data['precio']]);
+            $query = $this->db->conectar()->prepare('INSERT INTO motos values (:id_moto, :marca, :modelo, :cc, :precio)');
+            $query->execute([':id_moto' => null, ':marca' => $data['marca'], ':modelo' => $data['modelo'], ':cc' => $data['cc'], ':precio' => $data['precio']]);
             echo 'ok';
         }
 
         public function update($data)
         {
-            $query = $this->db->conectar()->prepare('UPDATE motos SET  marcas = :marcas, modelos = :modelos, css = :css, precios = :precios WHERE id_motos = :id_motos');
-            $query->execute([':id_motos' => $data['idMotos'], ':marcas' => $data['marca'], ':modelos' => $data['modelo'], ':css' => $data['cc'], ':precios' => $data['precio']]);
+            $query = $this->db->conectar()->prepare('UPDATE motos SET  marca = :marca, modelo = :modelo, cc = :cc, precio = :precio WHERE id_moto = :id_moto');
+            $query->execute([':id_moto' => $data['idMotos'], ':marca' => $data['marca'], ':modelo' => $data['modelo'], ':css' => $data['cc'], ':precio' => $data['precio']]);
             echo 'ok';
         }
 
         public function delete($id)
         {
-            $query = $this->db->conectar()->prepare('DELETE FROM motos where id_motos = :id_motos');
-            $query->execute([':id_motos' => $id]);
+            $query = $this->db->conectar()->prepare('DELETE FROM motos where id_moto = :id_moto');
+            $query->execute([':id_moto' => $id]);
             echo 'ok';
         }
 
@@ -33,11 +33,11 @@
             $objMoto = array();
             foreach ($this->db->consultar($query) as $key => $value) {
                 $motos = new MotosDTO();
-                $motos->id_motos = $value['id_motos'];
-                $motos->marcas = $value['marcas'];
-                $motos->modelos = $value['modelos'];
-                $motos->ccs = $value['css'];
-                $motos->precios = $value['precios'];
+                $motos->id_moto = $value['id_moto'];
+                $motos->marca = $value['marca'];
+                $motos->modelo = $value['modelo'];
+                $motos->cc = $value['cc'];
+                $motos->precio = $value['precio'];
                 $objMoto['data'][] = $motos;
             }
             echo json_encode($objMoto, JSON_UNESCAPED_UNICODE);
