@@ -80,6 +80,13 @@ CREATE TABLE plant(
 	plant_size varchar(2)
 );
 
+CREATE TABLE perro(
+	id_perro int primary key auto_increment,
+	nombre_perro varchar(30),
+	raza_perro varchar(30),
+	edad_perro int (2),
+	sexo_perro varchar(10)
+);
 
 CREATE TABLE motos(
     id_motos int primary key auto_increment,

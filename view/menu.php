@@ -315,6 +315,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="perro" name="perro" href="'.constant('URL').'perro" class="nav-link">
+                              <i class="nav-icon fas fa-dog"></i>
+                              <p>
+                                Perros
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="motos" name="motos" href="'.constant('URL').'motos" class="nav-link">
                               <i class="nav-icon fas fa-store"></i>
                               <p>
@@ -322,7 +330,6 @@
                               </p>
                             </a>
                           </li>
-
                           <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
