@@ -79,3 +79,11 @@ CREATE TABLE plant(
 	plant_availability varchar(30),
 	plant_size varchar(2)
 );
+
+CREATE TABLE cartera(
+    id_cartera int primary key auto_increment,
+    material varchar(50),
+    color varchar(30),
+    modelo varchar(50),
+    marca varchar(50)
+);
