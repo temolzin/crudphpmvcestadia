@@ -79,3 +79,12 @@ CREATE TABLE plant(
 	plant_availability varchar(30),
 	plant_size varchar(2)
 );
+
+
+CREATE TABLE motos(
+    id_motos int primary key auto_increment,
+    marcas varchar(50),
+	modelos varchar(30),
+	css integer,
+	precios integer
+);

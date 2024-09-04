@@ -314,6 +314,14 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
+                            <a id="motos" name="motos" href="'.constant('URL').'motos" class="nav-link">
+                              <i class="nav-icon fas fa-store"></i>
+                              <p>
+                                Motocicletas
+                              </p>
+                            </a>
+                          </li>
 
                           <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
