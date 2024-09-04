@@ -259,7 +259,7 @@
                 { "data": "id_moto" },
                 { "data": "marca" },
                 { "data": "modelo" },
-                { "data": "ccs" },
+                { "data": "cc" },
                 { "data": "precio" },
                 {data: null,
                     "defaultContent":
@@ -286,13 +286,13 @@
             var idActualizar = $("#idMotosActualizar").val(data.id_moto);
             var marcaMotosActualizar = $("#marcaMotosActualizar").val(data.marca);
             var modeloMotosActualizar = $("#modeloMotosActualizar").val(data.modelo);
-            var ccMotosActualizar = $("#ccMotosActualizar").val(data.ccs);
+            var ccMotosActualizar = $("#ccMotosActualizar").val(data.cc);
             var precioMotosActualizar = $("#precioMotosActualizar").val(data.precio);
 
             var idConsulta = $("#idMotosConsultar").val(data.id_moto);
             var marcaConsulta = $("#marcaMotosConsultar").val(data.marca);
             var modeloConsulta = $("#modeloMotosConsultar").val(data.modelo);
-            var ccConsulta = $("#ccMotosConsultar").val(data.ccs);
+            var ccConsulta = $("#ccMotosConsultar").val(data.cc);
             var precioConsulta = $("#precioMotosConsultar").val(data.precio);
         });
     }
