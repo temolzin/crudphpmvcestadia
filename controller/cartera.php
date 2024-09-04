@@ -18,7 +18,7 @@
         $color = $_POST['color'];
         $modelo = $_POST['modelo'];
         $marca = $_POST['marca'];
-        $data = array('material_cartera' => $material, 'color_cartera' => $color, 'modelo_cartera' => $modelo, 'marca_cartera' => $marca);
+        $data = array('materialCartera' => $material, 'colorCartera' => $color, 'modeloCartera' => $modelo, 'marcaCartera' => $marca);
 
         require 'model/carteraDAO.php';
         $this->loadModel('carteraDAO');
@@ -33,7 +33,7 @@
         $modelo = $_POST['modeloCarteraActualizar'];
         $marca = $_POST['marcaCarteraActualizar'];
         $idCartera = $_POST['idCarteraActualizar'];
-        $data = array('material_cartera' => $material, 'color_cartera' => $color, 'modelo_cartera' => $modelo, 'marca_cartera' => $marca, 'idCartera' => $idCartera);
+        $data = array('materialCartera' => $material, 'colorCartera' => $color, 'modeloCartera' => $modelo, 'marcaCartera' => $marca, 'idCartera' => $idCartera);
 
         require 'model/carteraDAO.php';
         $this->loadModel('carteraDAO');
