@@ -103,3 +103,11 @@ CREATE TABLE motos(
 	cc integer,
 	precio integer
 );
+
+CREATE TABLE puerta(
+	puerta_id int primary key auto_increment,
+	puerta_material varchar(30),
+	puerta_precio decimal(9,2),
+	puerta_altura varchar(3),
+	puerta_anchura varchar(3)
+);

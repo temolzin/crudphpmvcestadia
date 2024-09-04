@@ -329,12 +329,20 @@
                                 Mesas
                               </p>
                             </a>
-                          </li>                          
+                          </li>
                           <li class="nav-item">
                             <a id="motos" name="motos" href="'.constant('URL').'motos" class="nav-link">
                               <i class="nav-icon fas fa-store"></i>
                               <p>
                                 Motocicletas
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="puerta" name="puerta" href="'.constant('URL').'puerta" class="nav-link">
+                              <i class="nav-icon fas fa-columns"></i>
+                              <p>
+                                Puerta
                               </p>
                             </a>
                           </li>
