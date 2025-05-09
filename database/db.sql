@@ -111,3 +111,12 @@ CREATE TABLE puerta(
 	puerta_altura varchar(3),
 	puerta_anchura varchar(3)
 );
+
+CREATE TABLE libro (
+    libro_id int primary key auto_increment,
+    libro_titulo varchar(150),
+    libro_autor varchar(100),
+    libro_genero varchar(50),
+    libro_editorial varchar(100)
+);
+
