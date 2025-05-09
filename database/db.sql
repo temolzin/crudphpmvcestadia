@@ -111,3 +111,11 @@ CREATE TABLE puerta(
 	puerta_altura varchar(3),
 	puerta_anchura varchar(3)
 );
+
+CREATE TABLE gato(
+	gato_id int primary key auto_increment,
+	gato_nombre varchar(30),
+	gato_peso decimal(9,2),
+	gato_altura varchar(3),
+	gato_color varchar(15)
+);
