@@ -347,6 +347,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="origami" name="origami" href="'.constant('URL').'origami" class="nav-link">
+                              <i class="fas fa-paper-plane"></i>
+                              <p>
+                                Origami
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
                               <p>

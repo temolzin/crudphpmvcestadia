@@ -111,3 +111,11 @@ CREATE TABLE puerta(
 	puerta_altura varchar(3),
 	puerta_anchura varchar(3)
 );
+
+CREATE TABLE origami(
+	origami_id int primary key auto_increment,
+	origami_material varchar(30),
+	origami_precio decimal(9,2),
+	origami_tamanio varchar(30),
+	origami_total_piezas varchar(6)
+);
