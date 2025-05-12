@@ -119,3 +119,12 @@ CREATE TABLE celular(
 	celular_imei varchar(16),
 	celular_almacenamiento varchar(16)
 );
+
+CREATE TABLE dulce(
+    id_dulce int primary key auto_increment,
+    nombre_dulce varchar(50),
+    cantidad_dulce varchar(50),
+    precio_dulce int,
+    sabor_dulce varchar(50)
+);
+
