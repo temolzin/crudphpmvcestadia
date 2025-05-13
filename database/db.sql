@@ -118,5 +118,13 @@ CREATE TABLE libro (
     libro_autor varchar(100),
     libro_genero varchar(50),
     libro_editorial varchar(100)
+
+CREATE TABLE dulce(
+    id_dulce int primary key auto_increment,
+    nombre_dulce varchar(50),
+    cantidad_dulce varchar(50),
+    precio_dulce int,
+    sabor_dulce varchar(50)
+
 );
 
