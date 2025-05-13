@@ -347,6 +347,13 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="libro" name="libro" href="'.constant('URL').'libro" class="nav-link">
+                              <i class="nav-icon fas fa-book"></i>
+                              <p>
+                                Libro
+                              </p>
+                            </a>
+                          </li>
                             <a id="dulce" name="dulce" href="'.constant('URL').'dulce" class="nav-link">
                               <i class="nav-icon fas fa-ice-cream"></i>
                               <p>
