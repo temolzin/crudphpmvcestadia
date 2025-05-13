@@ -112,6 +112,14 @@ CREATE TABLE puerta(
 	puerta_anchura varchar(3)
 );
 
+CREATE TABLE gato(
+	gato_id int primary key auto_increment,
+	gato_nombre varchar(30),
+	gato_peso decimal(9,2),
+	gato_altura varchar(3),
+	gato_color varchar(15)
+);
+
 CREATE TABLE celular(
 	celular_id int primary key auto_increment,
 	celular_marca varchar(30),
@@ -127,4 +135,3 @@ CREATE TABLE dulce(
     precio_dulce int,
     sabor_dulce varchar(50)
 );
-
