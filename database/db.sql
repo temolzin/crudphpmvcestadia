@@ -119,3 +119,11 @@ CREATE TABLE gato(
 	gato_altura varchar(3),
 	gato_color varchar(15)
 );
+
+CREATE TABLE dulce(
+    id_dulce int primary key auto_increment,
+    nombre_dulce varchar(50),
+    cantidad_dulce varchar(50),
+    precio_dulce int,
+    sabor_dulce varchar(50)
+);
