@@ -112,6 +112,14 @@ CREATE TABLE puerta(
 	puerta_anchura varchar(3)
 );
 
+CREATE TABLE celular(
+	celular_id int primary key auto_increment,
+	celular_marca varchar(30),
+	celular_precio decimal(9,2),
+	celular_imei varchar(16),
+	celular_almacenamiento varchar(16)
+);
+
 CREATE TABLE dulce(
     id_dulce int primary key auto_increment,
     nombre_dulce varchar(50),

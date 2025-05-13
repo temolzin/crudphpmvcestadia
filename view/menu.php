@@ -347,6 +347,10 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="puerta" name="celular" href="'.constant('URL').'celular" class="nav-link">
+                              <i class="nav-icon fas fa-phone"></i>
+                              <p>
+                                Celular
                             <a id="dulce" name="dulce" href="'.constant('URL').'dulce" class="nav-link">
                               <i class="nav-icon fas fa-ice-cream"></i>
                               <p>
