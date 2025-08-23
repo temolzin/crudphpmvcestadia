@@ -250,6 +250,14 @@
                               </p>
                             </a>
                           </li>
+                           <li class="nav-item">
+                            <a id="cartera" name="cartera" href="'.constant('URL').'cartera" class="nav-link">
+                              <i class="nav-icon fas fa-wallet"></i>
+                              <p>
+                                Cartera
+                              </p>
+                            </a>
+                          </li>
                           <li class="nav-item">
                             <a id="computer" name="computer" href="'.constant('URL').'computer" class="nav-link">
                               <i class="nav-icon fas fa-laptop"></i>

@@ -88,6 +88,14 @@ CREATE TABLE perro(
 	sexo_perro varchar(10)
 );
 
+CREATE TABLE cartera(
+    id_cartera int primary key auto_increment,
+    material varchar(50),
+    color varchar(30),
+    modelo varchar(50),
+    marca varchar(50)
+);
+
 CREATE TABLE mesa(
 	id_mesa int primary key auto_increment,
 	material varchar(30),
