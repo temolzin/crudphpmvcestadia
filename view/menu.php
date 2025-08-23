@@ -307,6 +307,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="fruit" name="fruit" href="'.constant('URL').'fruit" class="nav-link">
+                            <i class="nav-icon  fa fa-cube"></i>
+                              <p>
+                                Fruta
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="plant" name="plant" href="'.constant('URL').'plant" class="nav-link">
                               <i class="nav-icon fa fa-leaf"></i>
                               <p>
