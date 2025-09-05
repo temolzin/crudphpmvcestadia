@@ -128,3 +128,11 @@ CREATE TABLE dulce(
     sabor_dulce varchar(50)
 );
 
+CREATE TABLE Makeup (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,         -- Nombre del maquillaje
+    brand VARCHAR(50) NOT NULL,         -- Marca
+    type VARCHAR(50) NOT NULL,          -- Tipo (e.g., lipstick, foundation)
+    price DECIMAL(10,2) NOT NULL,       -- Precio
+    stock INT NOT NULL                   -- Cantidad en inventario
+);

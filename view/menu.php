@@ -359,6 +359,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="makeup" name="makeup" href="'.constant('URL').'makeup" class="nav-link">
+                              <i class="nav-icon fa fa-female"></i>
+                              <p>
+                                Maquillaje
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
                               <p>
