@@ -128,3 +128,7 @@ CREATE TABLE dulce(
     sabor_dulce varchar(50)
 );
 
+CREATE TABLE weather(
+    id_weather int primary key auto_increment,
+    name_weather varchar(50)
+);
