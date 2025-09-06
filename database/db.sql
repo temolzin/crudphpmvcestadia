@@ -132,3 +132,12 @@ CREATE TABLE weather(
     id_weather int primary key auto_increment,
     name_weather varchar(50)
 );
+
+CREATE TABLE song(
+    id_song int primary key auto_increment,
+    nombre_song varchar(50),
+    artista_song varchar(50),
+    duracion_song varchar(50),
+    disquera_song varchar(50),
+	anio_lanzamiento_song int
+);
