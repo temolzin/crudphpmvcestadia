@@ -371,6 +371,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="clothes" name="clothes" href="'.constant('URL').'clothes" class="nav-link">
+                              <i class="nav-icon fa fa-shopping-bag"></i>
+                              <p>
+                                Ropa
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
                               <p>
