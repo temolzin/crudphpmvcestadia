@@ -371,6 +371,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="videogame" name="videogame" href="'.constant('URL').'videogame" class="nav-link">
+                              <i class="nav-icon fa fa-gamepad"></i>
+                              <p>
+                                Videojuego
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
                               <p>

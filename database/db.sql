@@ -132,3 +132,11 @@ CREATE TABLE weather(
     id_weather int primary key auto_increment,
     name_weather varchar(50)
 );
+
+CREATE TABLE videogame(
+    id_videogame int primary key auto_increment,
+    title_videogame varchar(50),
+    gender_videogame varchar(50),
+    price_videogame int,
+    release_date_videogame DATE
+);
