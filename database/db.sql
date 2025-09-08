@@ -140,3 +140,13 @@ CREATE TABLE clothes(
 	size_clothes varchar(30),
 	price_clothes decimal(9,2)
 );
+
+CREATE TABLE player (
+    id_player INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_player VARCHAR(100),
+    apellidos_player VARCHAR(100),
+    edad_player INT,
+    posicion_player VARCHAR(50),
+    numero_camiseta INT
+
+);
