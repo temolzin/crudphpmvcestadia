@@ -140,3 +140,12 @@ CREATE TABLE videogame(
     price_videogame int,
     release_date_videogame DATE
 );
+  
+CREATE TABLE player (
+    id_player INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_player VARCHAR(100),
+    apellidos_player VARCHAR(100),
+    edad_player INT,
+    posicion_player VARCHAR(50),
+    numero_camiseta INT
+);
