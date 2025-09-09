@@ -135,9 +135,9 @@ CREATE TABLE weather(
 
 CREATE TABLE player (
     id_player INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_player VARCHAR(100),
-    apellidos_player VARCHAR(100),
-    edad_player INT,
-    posicion_player VARCHAR(50),
-    numero_camiseta INT
+    first_name_player VARCHAR(100),
+    last_name_player VARCHAR(100),
+    age_player INT,
+    position_player VARCHAR(50),
+    jersey_number_player INT
 );

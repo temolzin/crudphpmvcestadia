@@ -31,12 +31,12 @@
         }
 
         function update() {
-            $idPlayer = $_POST['idPlayerActualizar'];
-            $firstName = $_POST['nombrePlayerActualizar'];
-            $lastName = $_POST['apellidosPlayerActualizar'];
-            $age = $_POST['edadPlayerActualizar'];
-            $position = $_POST['posicionPlayerActualizar'];
-            $jerseyNumber = $_POST['numeroCamisetaPlayerActualizar'];
+            $idPlayer = $_POST['idPlayerUpdate'];
+            $firstName = $_POST['firstNamePlayerUpdate'];
+            $lastName = $_POST['lastNamePlayerUpdate'];
+            $age = $_POST['agePlayerUpdate'];
+            $position = $_POST['positionPlayerUpdate'];
+            $jerseyNumber = $_POST['jerseyNumberPlayerUpdate'];
             $data = array(
                 'idPlayer' => $idPlayer,
                 'firstName' => $firstName,
@@ -52,7 +52,7 @@
         }
 
         function delete(){
-            $matricula = $_POST['idEliminarPlayer'];
+            $matricula = $_POST['idDeletePlayer'];
 
             require 'model/playerDAO.php';
             $this->loadModel('playerDAO');
