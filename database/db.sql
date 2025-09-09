@@ -1,5 +1,6 @@
 create database estructuramvc;
 use estructuramvc;
+
 create table alumno (
     id_alumno int primary key auto_increment,
     nombre_alumno varchar(30),
