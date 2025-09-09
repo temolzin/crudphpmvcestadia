@@ -10,7 +10,7 @@ class SongDAO extends Model implements CRUD
     {
         try {
             $query = $this->db->conectar()->prepare(
-                'INSERT INTO music (title, artist, album, year) VALUES (:title, :artist, :album, :year)'
+                'INSERT INTO album (title, artist, album, year) VALUES (:title, :artist, :album, :year)'
             );
             $query->execute([
                 ':title' => $data['title'],
@@ -28,7 +28,7 @@ class SongDAO extends Model implements CRUD
     {
         try {
             $query = $this->db->conectar()->prepare(
-                'UPDATE music SET title = :title, artist = :artist, album = :album, year = :year WHERE id = :id'
+                'UPDATE album SET title = :title, artist = :artist, album = :album, year = :year WHERE id = :id'
             );
             $query->execute([
                 ':id' => $data['idSong'],
@@ -46,7 +46,7 @@ class SongDAO extends Model implements CRUD
     public function delete($id)
     {
         try {
-            $query = $this->db->conectar()->prepare('DELETE FROM music WHERE id = :id');
+            $query = $this->db->conectar()->prepare('DELETE FROM album WHERE id = :id');
             $query->execute([':id' => $id]);
             return true;
         } catch (PDOException $e) {
@@ -57,7 +57,7 @@ class SongDAO extends Model implements CRUD
     public function read()
     {
         require_once 'songDTO.php';
-        $query = "SELECT * FROM music";
+        $query = "SELECT * FROM album";
         $objSongs = array();
         $result = $this->db->consultar($query);
         if (!is_array($result)) {
