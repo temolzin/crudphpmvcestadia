@@ -144,7 +144,7 @@ CREATE TABLE player (
     numero_camiseta INT
 );
 
-CREATE TABLE music (
+CREATE TABLE album (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
     artist VARCHAR(100) NOT NULL,
