@@ -1,18 +1,11 @@
 <?php
     class SongDTO implements JsonSerializable {
-        private $id;
-        private $title;
-        private $artist;
-        private $album;
-        private $year;
-
         private $id_song;
         private $name_song;
         private $artist_song;
         private $duration_song;
         private $record_song;
         private $year_launch_song;
-
 
         public function __get($property){
             if(property_exists($this, $property)) {
@@ -24,7 +17,6 @@
                 $this->$property = $value;
             }
         }
-
         /**
          * Specify data which should be serialized to JSON
          * @link https://php.net/manual/en/jsonserializable.jsonserialize.php
