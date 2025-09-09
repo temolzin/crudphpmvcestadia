@@ -5,6 +5,7 @@ create table alumno (
     nombre_alumno varchar(30),
     apellidos_alumno varchar(30)
 );
+
 CREATE TABLE computer(
 	id_computer int primary key auto_increment,
 	name_computer varchar(30),
