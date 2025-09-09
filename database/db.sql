@@ -128,6 +128,7 @@ CREATE TABLE dulce(
     sabor_dulce varchar(50)
 );
 
+
 CREATE TABLE weather(
     id_weather int primary key auto_increment,
     name_weather varchar(50)
@@ -141,3 +142,15 @@ CREATE TABLE player (
     position_player VARCHAR(50),
     jersey_number_player INT
 );
+
+
+CREATE TABLE Makeup (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,         
+    brand VARCHAR(50) NOT NULL,         
+    type VARCHAR(50) NOT NULL,          
+    price DECIMAL(10,2) NOT NULL,       
+    stock INT NOT NULL                   
+);
+
+
