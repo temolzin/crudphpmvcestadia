@@ -5,6 +5,7 @@ create table alumno (
     nombre_alumno varchar(30),
     apellidos_alumno varchar(30)
 );
+
 CREATE TABLE computer(
 	id_computer int primary key auto_increment,
 	name_computer varchar(30),
@@ -140,7 +141,7 @@ CREATE TABLE videogame(
     price_videogame int,
     release_date_videogame DATE
 );
-  
+
 CREATE TABLE player (
     id_player INT AUTO_INCREMENT PRIMARY KEY,
     nombre_player VARCHAR(100),
@@ -149,3 +150,4 @@ CREATE TABLE player (
     posicion_player VARCHAR(50),
     numero_camiseta INT
 );
+
