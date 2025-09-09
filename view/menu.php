@@ -386,15 +386,6 @@
                               </p>
                             </a>
                           </li>
-                          <li class="nav-item">
-                            <a id="clothes" name="clothes" href="'.constant('URL').'clothes" class="nav-link">
-                              <i class="nav-icon fa fa-shopping-bag"></i>
-                              <p>
-                                Ropa
-                              </p>
-                             </a>
-                           </li>
-                           <li class="nav-item">
                             <a id="videogame" name="videogame" href="'.constant('URL').'videogame" class="nav-link">
                               <i class="nav-icon fa fa-gamepad"></i>
                               <p>
