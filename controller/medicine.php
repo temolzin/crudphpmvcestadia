@@ -24,10 +24,10 @@
                 'weigth' => $weigth
             );
 
-            require 'model/medicamentoDAO.php';
-            $this->loadModel('medicamentoDAO');
-            $medicamentoDAO = new MedicamentoDAO();
-            $medicamentoDAO->insert($data);
+            require 'model/medicineDAO.php';
+            $this->loadModel('medicineDAO');
+            $medicineDAO = new medicineDAO();
+            $medicineDAO->insert($data);
         }
 
         function update() {
@@ -46,27 +46,27 @@
                 'weigth' => $weigth
             );
 
-            require 'model/medicamentoDAO.php';
-            $this->loadModel('medicamentoDAO');
-            $medicamentoDAO = new MedicamentoDAO();
-            $medicamentoDAO->update($data);
+            require 'model/medicineDAO.php';
+            $this->loadModel('medicineDAO');
+            $medicineDAO = new medicineDAO();
+            $medicineDAO->update($data);
         }
 
         function delete(){
             $id = $_POST['idEliminar'];
 
-            require 'model/medicamentoDAO.php';
-            $this->loadModel('medicamentoDAO');
-            $medicamentoDAO = new MedicamentoDAO();
-            $medicamentoDAO->delete($id);
+            require 'model/medicineDAO.php';
+            $this->loadModel('medicineDAO');
+            $medicineDAO = new medicineDAO();
+            $medicineDAO->delete($id);
         }
 
         function read() {
-            require 'model/medicamentoDAO.php';
-            $this->loadModel('medicamentoDAO');
-            $medicamentoDAO = new MedicamentoDAO();
-            $medicamentoDAO = $medicamentoDAO->read();
-            /*echo $medicamentoDAO;*/
+            require 'model/medicineDAO.php';
+            $this->loadModel('medicineDAO');
+            $medicineDAO = new medicineDAO();
+            $medicineDAO = $medicineDAO->read();
+            /*echo $medicineDAO;*/
         }
     }
 ?>

@@ -1,5 +1,5 @@
 <?php
-    class MedicamentoDTO implements JsonSerializable {
+    class medicineDTO implements JsonSerializable {
         private $id;
         private $name;
         private $price;

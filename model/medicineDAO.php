@@ -1,5 +1,5 @@
 <?php
-    class MedicamentoDAO extends Model implements CRUD {
+    class medicineDAO extends Model implements CRUD {
         public function __construct()
         {
             parent::__construct();
@@ -38,11 +38,11 @@
         }
         public function read()
         {
-            require_once 'medicamentoDTO.php';
+            require_once 'medicineDTO.php';
             $query = "SELECT * FROM medicamento";
             $objMedicamentos = array();
             foreach ($this->db->consultar($query) as $key => $value) {
-                $medicamento = new MedicamentoDTO();
+                $medicamento = new medicineDTO();
                 $medicamento->id = $value['id'];
                 $medicamento->name = $value['name'];
                 $medicamento->price = $value['price'];
