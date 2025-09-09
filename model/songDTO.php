@@ -1,12 +1,11 @@
 <?php
-    class PlayerDTO implements JsonSerializable {
-        private $idPlayer;
-        private $firstNamePlayer;
-        private $lastNamePlayer;
-        private $agePlayer;
-        private $positionPlayer;
-        private $jerseyNumberPlayer;
-
+    class SongDTO implements JsonSerializable {
+        private $id_song;
+        private $name_song;
+        private $artist_song;
+        private $duration_song;
+        private $record_song;
+        private $year_launch_song;
 
         public function __get($property){
             if(property_exists($this, $property)) {
@@ -18,7 +17,7 @@
                 $this->$property = $value;
             }
         }
-
+        
         /**
          * Specify data which should be serialized to JSON
          * @link https://php.net/manual/en/jsonserializable.jsonserialize.php

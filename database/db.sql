@@ -5,6 +5,7 @@ create table alumno (
     nombre_alumno varchar(30),
     apellidos_alumno varchar(30)
 );
+
 CREATE TABLE computer(
 	id_computer int primary key auto_increment,
 	name_computer varchar(30),
@@ -128,33 +129,54 @@ CREATE TABLE dulce(
     sabor_dulce varchar(50)
 );
 
+
 CREATE TABLE weather(
     id_weather int primary key auto_increment,
     name_weather varchar(50)
 );
 
+
 CREATE TABLE clothes(
 	id_clothes int primary key auto_increment,
 	products_clothes varchar(30),
 	categories_clothes varchar(30),
 	size_clothes varchar(30),
 	price_clothes decimal(9,2)
+);
+
+CREATE TABLE videogame(
+    id_videogame int primary key auto_increment,
+    title_videogame varchar(50),
+    gender_videogame varchar(50),
+    price_videogame int,
+    release_date_videogame DATE
+
 );
 
 CREATE TABLE player (
     id_player INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_player VARCHAR(100),
-    apellidos_player VARCHAR(100),
-    edad_player INT,
-    posicion_player VARCHAR(50),
-    numero_camiseta INT
+    first_name_player VARCHAR(100),
+    last_name_player VARCHAR(100),
+    age_player INT,
+    position_player VARCHAR(50),
+    jersey_number_player INT
 
 );
 
-CREATE TABLE clothes(
-	id_clothes int primary key auto_increment,
-	products_clothes varchar(30),
-	categories_clothes varchar(30),
-	size_clothes varchar(30),
-	price_clothes decimal(9,2)
+CREATE TABLE Makeup (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,         
+    brand VARCHAR(50) NOT NULL,         
+    type VARCHAR(50) NOT NULL,          
+    price DECIMAL(10,2) NOT NULL,       
+    stock INT NOT NULL                   
+);
+
+CREATE TABLE song(
+    id_song int primary key auto_increment,
+    name_song varchar(50),
+    artist_song varchar(50),
+    duration_song varchar(50),
+    record_song varchar(50),
+	  year_launch_song int
 );
