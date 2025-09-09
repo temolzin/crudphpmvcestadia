@@ -113,7 +113,7 @@
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Id (*)</label>
-                                    <input type="text" class="form-control" id="idVideogameActualizar" name="idVideogameActualizar" placeholder="Id"/>
+                                    <input type="text" class="form-control" id="id_videogame_update" name="id_videogame_update" placeholder="Id"/>
                                 </div>
                             </div>
                         </div>
@@ -121,25 +121,25 @@
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Título del Videogame (*)</label>
-                                    <input type="text" class="form-control" id="title_videogameActualizar" name="title_videogameActualizar" placeholder="Titulo"/>
+                                    <input type="text" class="form-control" id="title_videogame_update" name="title_videogame_update" placeholder="Titulo"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Género (*)</label>
-                                    <input type="text" class="form-control" id="gender_videogameActualizar" name="gender_videogameActualizar" placeholder="Género de videojuego"/>
+                                    <input type="text" class="form-control" id="gender_videogame_update" name="gender_videogame_update" placeholder="Género de videojuego"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Precio (*)</label>
-                                    <input type="text" class="form-control" id="price_videogameActualizar" name="price_videogameActualizar" placeholder="Precio"/>
+                                    <input type="text" class="form-control" id="price_videogame_update" name="price_videogame_update" placeholder="Precio"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Fecha de lanzamiento (*)</label>
-                                    <input type="date" class="form-control" id="release_date_videogameActualizar" name="release_date_videogameActualizar" placeholder="Fecha de lanzamiento"/>
+                                    <input type="date" class="form-control" id="release_date_videogame_update" name="release_date_videogame_update" placeholder="Fecha de lanzamiento"/>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                 </button>
             </div>
             <form role="form" id="formEliminarVideogame" name="formActualizarVideogame">
-                <input type="text" hidden id="idEliminarVideogame" name="idEliminarVideogame">
+                <input type="text" hidden id="id_videogame_delete" name="id_videogame_delete">
                 <div class="modal-body text-center text-danger">¿Realmente deseas eliminar este Videogame?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
@@ -239,13 +239,13 @@
 <script>
 
     $(document).ready(function (){
-        mostrarVideogames();
-        enviarFormularioRegistrar();
-        enviarFormularioActualizar();
-        eliminarRegistro();
+        showVideogames();
+        sendRegisterForm();
+        sendUpdateForm();
+        deleteRecord();
     });
 
-    var mostrarVideogames = function() {
+    var showVideogames = function() {
         var tableVideogame = $('#dataTableVideogame').DataTable({
             "processing": true,
             "ajax": {
@@ -271,30 +271,30 @@
             buttons: ['copy', 'excel', 'csv', 'pdf', 'colvis'],
             dom: 'Bfltip'
         });
-        obtenerdatosDT(tableVideogame);
+        obtainDataDT(tableVideogame);
     }
 
-    var obtenerdatosDT = function (table) {
+    var obtainDataDT = function (table) {
         $('#dataTableVideogame tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
 
-            var idEliminar = $('#idEliminarVideogame').val(data.id_videogame);
+            var id_videogame_delete = $('#id_videogame_delete').val(data.id_videogame);
 
-            var idActualizar = $("#idVideogameActualizar").val(data.id_videogame);
-            var nombrevideogameactualizar = $("#title_videogameActualizar").val(data.title_videogame);
-            var cantidadvideogameactualizar = $("#gender_videogameActualizar").val(data.gender_videogame);
-            var preciovideogameActualizar =$("#price_videogameActualizar").val(data.price_videogame);
-            var saborvideogameActualizar =$("#release_date_videogameActualizar").val(data.release_date_videogame);
+            var id_videogame_update = $("#id_videogame_update").val(data.id_videogame);
+            var title_videogame_update = $("#title_videogame_update").val(data.title_videogame);
+            var gender_videogame_update = $("#gender_videogame_update").val(data.gender_videogame);
+            var price_videogame_update =$("#price_videogame_update").val(data.price_videogame);
+            var release_date_videogame_update =$("#release_date_videogame_update").val(data.release_date_videogame);
 
-            var idConsulta = $("#idVideogameConsultar").val(data.id_videogame);
-            var nombreConsulta = $("#title_videogameConsultar").val(data.title_videogame);
-            var cantidadvideogameconsultar = $("#gender_videogameConsultar").val(data.gender_videogame);
-            var preciovideogameconsultar =$("#price_videogameConsultar").val(data.price_videogame);
-            var saborvideogameconsultar =$("#release_date_videogameConsultar").val(data.release_date_videogame);
+            var idView = $("#idVideogameConsultar").val(data.id_videogame);
+            var nameView = $("#title_videogameConsultar").val(data.title_videogame);
+            var genreVideogameView = $("#gender_videogameConsultar").val(data.gender_videogame);
+            var priceVideogameView =$("#price_videogameConsultar").val(data.price_videogame);
+            var releaseDateVideogameView =$("#release_date_videogameConsultar").val(data.release_date_videogame);
         });
     }
 
-    var enviarFormularioRegistrar = function () {
+    var sendRegisterForm = function () {
         $.validator.setDefaults({
             submitHandler: function () {
                 var datos = $('#formRegistrarVideogame').serialize();
@@ -365,7 +365,7 @@
         });
     }
 
-    var enviarFormularioActualizar = function () {
+    var sendUpdateForm = function () {
         $.validator.setDefaults({
             submitHandler: function () {
                 var datos = $('#formActualizarVideogame').serialize();
@@ -399,30 +399,30 @@
                     required: true,
                     number: true
                 },
-                title_videogameActualizar: {
+                title_videogame_update: {
                     required: true
                 },
-                gender_videogameActualizar: {
+                gender_videogame_update: {
                     required: true
                 },
-                price_videogameActualizar: {
+                price_videogame_update: {
                     required: true
                 },
-                release_date_videogameActualizar: {
+                release_date_videogame_update: {
                     required: true
                 }
             },
             messages: {
-                title_videogameActualizar: {
+                title_videogame_update: {
                     required: "INGRESA UN TITULO"
                 },
-                gender_videogameActualizar: {
+                gender_videogame_update: {
                     required: "INGRESA UN GÉNERO"
                 },
-                price_videogameActualizar: {
+                price_videogame_update: {
                     required: "INGRESA UN # DE PRECIO"
                 },
-                release_date_videogameActualizar: {
+                release_date_videogame_update: {
                     required: "INGRESA UNA FECHA"
                 }
             },
@@ -440,7 +440,7 @@
         });
     }
 
-    var eliminarRegistro = function () {
+    var deleteRecord = function () {
         $( "#formEliminarVideogame" ).submit(function( event ) {
             event.preventDefault();
             var datos = $('#formEliminarVideogame').serialize();
