@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     class SongDTO implements JsonSerializable {
         private $id_song;
@@ -32,3 +33,4 @@
         }
     }
 ?>
+
