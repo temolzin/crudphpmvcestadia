@@ -1,5 +1,7 @@
 <?php
+
     class Song extends Controller
+        
     {
         function __construct()
         {
@@ -8,6 +10,7 @@
         function index() {
             $this->view->render('song/index');
         }
+        
 
         function insert() {
             $nameSong = $_POST['name_song'];
