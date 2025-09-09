@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-right">
-                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegistrarPlayer'> <i class="fas fa-plus-circle"></i> Registrar Jugador </button>
+                <button class="btn btn-success" data-toggle='modal' data-target='#modalCreatePlayer'> <i class="fas fa-plus-circle"></i> Registrar Jugador </button>
             </div>
         </div>
         <br>
@@ -40,8 +40,8 @@
 </section>
 
 <!--*****************************************MODALS****************************************-->
-<!--------------------------------------------------------- Modal Registrar----------------------------------------------->
-<div class="modal fade" id="modalRegistrarPlayer" tabindex="-1" role="dialog" aria-labelledby="modalRegistrarPlayer" aria-hidden="true">
+<!--------------------------------------------------------- Modal Crate----------------------------------------------->
+<div class="modal fade" id="modalCreatePlayer" tabindex="-1" role="dialog" aria-labelledby="modalCreatePlayer" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-success">
@@ -55,37 +55,37 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formRegistrarPlayer" name="formRegistrarPlayer" method="post">
+                <form role="form" id="formCreatePlayer" name="formCreatePlayer" method="post">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombrePlayer" name="firstName" placeholder="Nombre"/>
+                                    <input type="text" class="form-control" id="firstNamePlayer" name="firstName" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Apellidos (*)</label>
-                                    <input type="text" class="form-control" id="apellidosPlayer" name="lastName" placeholder="Apellidos"/>
+                                    <input type="text" class="form-control" id="lastNamePlayer" name="lastName" placeholder="Apellidos"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Edad (*)</label>
-                                    <input type="number" class="form-control" id="edadPlayer" name="age" placeholder="Edad"/>
+                                    <input type="number" class="form-control" id="agePlayer" name="age" placeholder="Edad"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Posición (*)</label>
-                                    <input type="text" class="form-control" id="posicionPlayer" name="position" placeholder="Posición"/>
+                                    <input type="text" class="form-control" id="positionPlayer" name="position" placeholder="Posición"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Número de Camiseta (*)</label>
-                                    <input type="number" class="form-control" id="numeroCamiseta" name="jerseyNumber" placeholder="Número de Camiseta"/>
+                                    <input type="number" class="form-control" id="jerseyNumber" name="jerseyNumber" placeholder="Número de Camiseta"/>
                                 </div>
                             </div>
                         </div>
@@ -100,8 +100,8 @@
     </div>
 </div>
 
-<!--------------------------------------------------------- Modal Actualizar----------------------------------------------->
-<div class="modal fade" id="modalActualizarPlayer" tabindex="-1" role="dialog" aria-labelledby="modalActualizarPlayer" aria-hidden="true">
+<!--------------------------------------------------------- Modal Update----------------------------------------------->
+<div class="modal fade" id="modalUpdatePlayer" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePlayer" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-warning">
@@ -114,13 +114,13 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formActualizarPlayer" name="formActualizarPlayer">
+                <form role="form" id="formUpdatePlayer" name="formUpdatePlayer">
                     <div class="card-body">
                         <div style="display: none;" class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Matrícula (*)</label>
-                                    <input type="text" class="form-control" id="idPlayerActualizar" name="idPlayerActualizar" placeholder="Matrícula"/>
+                                    <input type="text" class="form-control" id="idPlayerUpdate" name="idPlayerUpdate" placeholder="Matrícula"/>
                                 </div>
                             </div>
                         </div>
@@ -128,31 +128,31 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombrePlayerActualizar" name="nombrePlayerActualizar" placeholder="Nombre"/>
+                                    <input type="text" class="form-control" id="firstNamePlayerUpdate" name="firstNamePlayerUpdate" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Apellidos (*)</label>
-                                    <input type="text" class="form-control" id="apellidosPlayerActualizar" name="apellidosPlayerActualizar" placeholder="Apellidos"/>
+                                    <input type="text" class="form-control" id="lastNamePlayerUpdate" name="lastNamePlayerUpdate" placeholder="Apellidos"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Edad (*)</label>
-                                    <input type="text" class="form-control" id="edadPlayerActualizar" name="edadPlayerActualizar" placeholder="Edad"/>
+                                    <input type="text" class="form-control" id="agePlayerUpdate" name="agePlayerUpdate" placeholder="Edad"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Posición (*)</label>
-                                    <input type="text" class="form-control" id="posicionPlayerActualizar" name="posicionPlayerActualizar" placeholder="Posición"/>
+                                    <input type="text" class="form-control" id="positionPlayerUpdate" name="positionPlayerUpdate" placeholder="Posición"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Numero de Camiseta (*)</label>
-                                    <input type="text" class="form-control" id="numeroCamisetaPlayerActualizar" name="numeroCamisetaPlayerActualizar" placeholder="Numero de Camiseta"/>
+                                    <input type="text" class="form-control" id="jerseyNumberPlayerUpdate" name="jerseyNumberPlayerUpdate" placeholder="Numero de Camiseta"/>
                                 </div>
                             </div>
                         </div>
@@ -167,8 +167,8 @@
     </div>
 </div>
 
-<!--------------------------------------------------------- Modal Detalle Player----------------------------------------------->
-<div class="modal fade" id="modalDetallePlayer" tabindex="-1" role="dialog" aria-labelledby="modalDetallePlayer" aria-hidden="true">
+<!--------------------------------------------------------- Modal read Player----------------------------------------------->
+<div class="modal fade" id="modalReadPlayer" tabindex="-1" role="dialog" aria-labelledby="modalReadPlayer" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-primary">
@@ -181,37 +181,37 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formConsulta" name="formConsulta">
+                <form role="form" id="formRead" name="formRead">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" disabled class="form-control" id="nombrePlayerConsultar" name="nombrePlayerConsultar" placeholder="Nombre"/>
+                                    <input type="text" disabled class="form-control" id="firstNamePlayerRead" name="firstNamePlayerRead" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Apellidos (*)</label>
-                                    <input type="text" disabled class="form-control" id="apellidoPlayerConsultar" name="apellidoPlayerConsultar" placeholder="Apellidos"/>
+                                    <input type="text" disabled class="form-control" id="lastNamePlayerRead" name="lastNamePlayerRead" placeholder="Apellidos"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Edad (*)</label>
-                                    <input type="text" disabled class="form-control" id="edadPlayerConsultar" name="edadPlayerConsultar" placeholder="Edad"/>
+                                    <input type="text" disabled class="form-control" id="agePlayerRead" name="agePlayerRead" placeholder="Edad"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Posición (*)</label>
-                                    <input type="text" disabled class="form-control" id="posicionPlayerConsultar" name="posicionPlayerConsultar" placeholder="Posición"/>
+                                    <input type="text" disabled class="form-control" id="positionPlayerRead" name="positionPlayerRead" placeholder="Posición"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Número de Camiseta (*)</label>
-                                    <input type="text" disabled class="form-control" id="numeroCamisetaPlayerConsultar" name="numeroCamisetaPlayerConsultar" placeholder="Número de Camiseta"/>
+                                    <input type="text" disabled class="form-control" id="jerseyNumberPlayerRead" name="jerseyNumberPlayerRead" placeholder="Número de Camiseta"/>
                                 </div>
                             </div>
                         </div>
@@ -225,8 +225,8 @@
     </div>
 </div>
 
-<!-- ****************************** Modal Eliminar Player *************************************************-->
-<div class="modal fade" id="modalEliminarPlayer" tabindex="-1" role="dialog" aria-labelledby="modalEliminarPlayer" aria-hidden="true">
+<!-- ****************************** Modal Delete Player *************************************************-->
+<div class="modal fade" id="modalDeletePlayer" tabindex="-1" role="dialog" aria-labelledby="modalDeletePlayer" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header bg-danger">
@@ -235,8 +235,8 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form role="form" id="formEliminarPlayer" name="formActualizarPlayer">
-                <input type="text" hidden id="idEliminarPlayer" name="idEliminarPlayer">
+            <form role="form" id="formDeletePlayer" name="formUpdatePlayer">
+                <input type="text" hidden id="idDeletePlayer" name="idDeletePlayer">
                 <div class="modal-body text-center text-danger">¿Realmente deseas eliminar este Jugador?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
@@ -254,30 +254,30 @@
 <script>
 
     $(document).ready(function (){
-        mostrarPlayers();
-        enviarFormularioRegistrar();
-        enviarFormularioActualizar();
-        eliminarRegistro();
+        showPlayers();
+        sendFormRegister();
+        sendFormUpdate();
+        deleteRegister();
     });
 
-    var mostrarPlayers = function() {
+    var showPlayers = function() {
         var tablePlayer = $('#dataTablePlayer').DataTable({
             "processing": true,
             "ajax": {
                 "url": "<?php echo constant('URL');?>player/read"
             },
             "columns": [
-                { "data": "id_player" },
-                { "data": "nombre_player" },
-                { "data": "apellidos_player" },
-                { "data": "edad_player" },
-                { "data": "posicion_player" },
-                { "data": "numero_camiseta" },
+                { "data": "idPlayer" },
+                { "data": "firstNamePlayer" },
+                { "data": "lastNamePlayer" },
+                { "data": "agePlayer" },
+                { "data": "positionPlayer" },
+                { "data": "jerseyNumberPlayer" },
                 {data:null,
                     "defaultContent":
-                        `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetallePlayer' title="Ver Detalles"><i class="fa fa-eye"></i></button>
-                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalActualizarPlayer' title="Editar Datos"><i class="fa fa-edit"></i></button>
-                         <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalEliminarPlayer' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
+                        `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalReadPlayer' title="Ver Detalles"><i class="fa fa-eye"></i></button>
+                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalUpdatePlayer' title="Editar Datos"><i class="fa fa-edit"></i></button>
+                         <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalDeletePlayer' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
                 }
             ],
             responsive: true,
@@ -293,29 +293,29 @@
     var obtenerdatosDT = function (table) {
         $('#dataTablePlayer tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
-            var idEliminar = $('#idEliminarPlayer').val(data.id_player);
+            var idDelete = $('#idDeletePlayer').val(data.idPlayer);
 
-            var idActualizar = $("#idPlayerActualizar").val(data.id_player);
-            var nombrePlayerActualizar = $("#nombrePlayerActualizar").val(data.nombre_player);
-            var apellido = $("#apellidosPlayerActualizar").val(data.apellidos_player);
-            var edad = $("#edadPlayerActualizar").val(data.edad_player);
-            var posicion = $("#posicionPlayerActualizar").val(data.posicion_player);
-            var numeroCamiseta = $("#numeroCamisetaPlayerActualizar").val(data.numero_camiseta);
+            var idUpdate = $("#idPlayerUpdate").val(data.idPlayer);
+            var firstNamePlayerUpdate = $("#firstNamePlayerUpdate").val(data.firstNamePlayer);
+            var lastNamePlayerUpdate = $("#lastNamePlayerUpdate").val(data.lastNamePlayer);
+            var agePlayerUpdate = $("#agePlayerUpdate").val(data.agePlayer);
+            var positionPlayerUpdate = $("#positionPlayerUpdate").val(data.positionPlayer);
+            var jerseyNumberPlayerUpdate = $("#jerseyNumberPlayerUpdate").val(data.jerseyNumberPlayer);
 
 
-            var idConsulta = $("#idPlayerConsultar").val(data.id_player);
-            var nombreConsulta = $("#nombrePlayerConsultar").val(data.nombre_player);
-            var apellidoConsulta = $("#apellidoPlayerConsultar").val(data.apellidos_player);
-            var edadConsulta = $("#edadPlayerConsultar").val(data.edad_player);
-            var posicionConsulta = $("#posicionPlayerConsultar").val(data.posicion_player);
-            var numeroCamisetaConsulta = $("#numeroCamisetaPlayerConsultar").val(data.numero_camiseta);
+            var idRead = $("#idPlayerRead").val(data.idPlayer);
+            var firstNamePlayer = $("#firstNamePlayerRead").val(data.firstNamePlayer);
+            var lastNamePlayer = $("#lastNamePlayerRead").val(data.lastNamePlayer);
+            var agePlayer = $("#agePlayerRead").val(data.agePlayer);
+            var positionPlayer = $("#positionPlayerRead").val(data.positionPlayer);
+            var jerseyNumberPlayer = $("#jerseyNumberPlayerRead").val(data.jerseyNumberPlayer);
         });
     }
 
-    var enviarFormularioRegistrar = function () {
+    var sendFormRegister = function () {
         $.validator.setDefaults({
             submitHandler: function () {
-                var datos = $('#formRegistrarPlayer').serialize();
+                var datos = $('#formCreatePlayer').serialize();
                 $.ajax({
                     type: "POST",
                     url: "<?php echo constant('URL');?>player/insert",
@@ -340,38 +340,38 @@
                 });
             }
         });
-        $('#formRegistrarPlayer').validate({
+        $('#formCreatePlayer').validate({
             rules: {
-                nombrePlayer: {
+                firstName: {
                     required: true
                 },
-                apellidosPlayer: {
+                lastName: {
                     required: true
                 },
-                edadPlayer: {
+                age: {
                     required: true
                 },
-                posicionPlayer: {
+                position: {
                     required: true
                 },
-                numeroCamiseta: {
+                jerseyNumber: {
                     required: true
                 }
             },
             messages: {
-                nombrePlayer: {
+                firstName: {
                     required: "Ingresa un nombre"
                 },
-                apellidosPlayer: {
+                lastName: {
                     required: "Ingresa un apellido"
                 },
-                edadPlayer: {
+                age: {
                     required: "Ingresa la edad"
                 },
-                posicionPlayer: {
+                positionPlayer: {
                     required: "Ingresa la posición"
                 },
-                numeroCamiseta: {
+                jerseyNumberPlayer: {
                     required: "Ingresa el número de camiseta"
                 }
             },
@@ -389,10 +389,10 @@
         });
     }
 
-    var enviarFormularioActualizar = function () {
+    var sendFormUpdate = function () {
         $.validator.setDefaults({
             submitHandler: function () {
-                var datos = $('#formActualizarPlayer').serialize();
+                var datos = $('#formUpdatePlayer').serialize();
                 $.ajax({
                     type: "POST",
                     url: "<?php echo constant('URL');?>player/update",
@@ -417,38 +417,38 @@
                 });
             }
         });
-        $('#formActualizarPlayer').validate({
+        $('#formUpdatePlayer').validate({
             rules: {
-                nombrePlayerActualizar: {
+                firstNamePlayerUpdate: {
                     required: true
                 },
-                apellidosPlayerActualizar: {
+                lastNamePlayerUpdate: {
                     required: true
                 },
-                edadPlayerActualizar: {
+                agePlayerUpdate: {
                     required: true
                 },
-                posicionPlayerActualizar: {
+                positionPlayerUpdate: {
                     required: true
                 },
-                numeroCamisetaPlayerActualizar: {
+                jerseyNumberPlayerUpdate: {
                     required: true
                 }
             },
             messages: {
-                nombreActualizar: {
+                firstNamePlayerUpdate: {
                     required: "Ingresa un nombre"
                 },
-                apellidosPlayerActualizar: {
+                lastNamePlayerUpdate: {
                     required: "Ingresa un apellido"
                 },
-                edadPlayerActualizar: {
+                agePlayerUpdate: {
                     required: "Ingresa la edad"
                 },
-                posicionPlayerActualizar: {
+                positionPlayerUpdate: {
                     required: "Ingresa la posición"
                 },
-                numeroCamisetaPlayerActualizar: {
+                jerseyNumberPlayerUpdate: {
                     required: "Ingresa el número de camiseta"
                 }
             },
@@ -466,10 +466,10 @@
         });
     }
 
-    var eliminarRegistro = function () {
-        $( "#formEliminarPlayer" ).submit(function( event ) {
+    var deleteRegister = function () {
+        $( "#formDeletePlayer" ).submit(function( event ) {
             event.preventDefault();
-            var datos = $('#formEliminarPlayer').serialize();
+            var datos = $('#formDeletePlayer').serialize();
             $.ajax({
                 type: "POST",
                 url: "<?php echo constant('URL');?>player/delete",

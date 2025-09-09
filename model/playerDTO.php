@@ -1,11 +1,11 @@
 <?php
     class PlayerDTO implements JsonSerializable {
-        private $id_player;
-        private $nombre_player;
-        private $apellidos_player;
-        private $edad_player;
-        private $posicion_player;
-        private $numero_camiseta;
+        private $idPlayer;
+        private $firstNamePlayer;
+        private $lastNamePlayer;
+        private $agePlayer;
+        private $positionPlayer;
+        private $jerseyNumberPlayer;
 
 
         public function __get($property){
