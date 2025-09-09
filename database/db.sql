@@ -161,3 +161,11 @@ CREATE TABLE Makeup (
     stock INT NOT NULL                   
 );
 
+CREATE TABLE song(
+    id_song int primary key auto_increment,
+    name_song varchar(50),
+    artist_song varchar(50),
+    duration_song varchar(50),
+    record_song varchar(50),
+	year_launch_song int
+);
