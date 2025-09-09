@@ -259,6 +259,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="madicine" name="medicine" href="'.constant('URL').'medicine" class="nav-link">
+                              <i class="nav-icon fas fa-solid fa-pills"></i>
+                              <p>
+                                Medicamentos
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="materia" name="materia" href="'.constant('URL').'materia" class="nav-link">
                               <i class="nav-icon fas fa-laptop"></i>
                               <p>
@@ -363,6 +371,13 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="makeup" name="makeup" href="'.constant('URL').'makeup" class="nav-link">
+                              <i class="nav-icon fa fa-female"></i>
+                              <p>
+                                Maquillaje
+                              </p>
+                            </a>
+                          </li>
                             <a id="weather" name="weather" href="'.constant('URL').'weather" class="nav-link">
                               <i class="nav-icon fa fa-bolt"></i>
                               <p>
