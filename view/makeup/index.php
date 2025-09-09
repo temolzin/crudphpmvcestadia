@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-right">
-                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegisterMakeup'>
+                <button class="btn btn-success" data-toggle='modal' data-target='#modal_register_makeup'>
                     <i class="fas fa-plus-circle"></i> Registrar Maquillaje
                 </button>
             </div>
@@ -20,16 +20,16 @@
                         <h3 class="card-title">Tabla Maquillaje</h3>
                     </div>
                     <div class="card-body">
-                        <table id="dataTableMakeup" class="table table-bordered table-hover dt-responsive nowrap" style="width:100%">
+                        <table id="data_table_makeup" class="table table-bordered table-hover dt-responsive nowrap" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Nombre</th>
-                                    <th>Marca</th>
-                                    <th>Tipo</th>
-                                    <th>Precio</th>
-                                    <th>Stock</th>
-                                    <th>Opciones</th>
+                                    <th>id</th>
+                                    <th>nombre</th>
+                                    <th>marca</th>
+                                    <th>tipo</th>
+                                    <th>precio</th>
+                                    <th>stock</th>
+                                    <th>opciones</th>
                                 </tr>
                             </thead>
                         </table>
@@ -43,7 +43,7 @@
 <!--*****************************************MODALS****************************************-->
 
 <!-- Modal Registrar Maquillaje -->
-<div class="modal fade" id="modalRegisterMakeup" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modal_register_makeup" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-success">
@@ -53,7 +53,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form id="formRegisterMakeup" method="post">
+                <form id="form_register_makeup" method="post">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
@@ -99,7 +99,7 @@
 </div>
 
 <!-- Modal Actualizar Maquillaje -->
-<div class="modal fade" id="modalUpdateMakeup" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modal_update_makeup" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-warning">
@@ -109,38 +109,38 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form id="formUpdateMakeup">
+                <form id="form_update_makeup">
                     <div class="card-body">
-                        <input type="hidden" id="idUpdate" name="idUpdate">
+                        <input type="hidden" id="id_update" name="id_update">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nameUpdate" name="nameUpdate" placeholder="Nombre"/>
+                                    <input type="text" class="form-control" id="name_update" name="name_update" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Marca (*)</label>
-                                    <input type="text" class="form-control" id="brandUpdate" name="brandUpdate" placeholder="Marca"/>
+                                    <input type="text" class="form-control" id="brand_update" name="brand_update" placeholder="Marca"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Tipo (*)</label>
-                                    <input type="text" class="form-control" id="typeUpdate" name="typeUpdate" placeholder="Tipo"/>
+                                    <input type="text" class="form-control" id="type_update" name="type_update" placeholder="Tipo"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Precio (*)</label>
-                                    <input type="text" class="form-control" id="priceUpdate" name="priceUpdate" placeholder="Precio"/>
+                                    <input type="text" class="form-control" id="price_update" name="price_update" placeholder="Precio"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Stock (*)</label>
-                                    <input type="text" class="form-control" id="stockUpdate" name="stockUpdate" placeholder="Stock"/>
+                                    <input type="text" class="form-control" id="stock_update" name="stock_update" placeholder="Stock"/>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
 </div>
 
 <!-- Modal Detalle Maquillaje -->
-<div class="modal fade" id="modalDetailMakeup" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modal_detail_makeup" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-primary">
@@ -166,37 +166,37 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form id="formDetailMakeup">
+                <form id="form_detail_makeup">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nameDetail" name="nameDetail" placeholder="Nombre" readonly/>
+                                    <input type="text" class="form-control" id="name_detail" name="name_detail" placeholder="Nombre" readonly/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Marca (*)</label>
-                                    <input type="text" class="form-control" id="brandDetail" name="brandDetail" placeholder="Marca" readonly/>
+                                    <input type="text" class="form-control" id="brand_detail" name="brand_detail" placeholder="Marca" readonly/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Tipo (*)</label>
-                                    <input type="text" class="form-control" id="typeDetail" name="typeDetail" placeholder="Tipo" readonly/>
+                                    <input type="text" class="form-control" id="type_detail" name="type_detail" placeholder="Tipo" readonly/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Precio (*)</label>
-                                    <input type="text" class="form-control" id="priceDetail" name="priceDetail" placeholder="Precio" readonly/>
+                                    <input type="text" class="form-control" id="price_detail" name="price_detail" placeholder="Precio" readonly/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Stock (*)</label>
-                                    <input type="text" class="form-control" id="stockDetail" name="stockDetail" placeholder="Stock" readonly/>
+                                    <input type="text" class="form-control" id="stock_detail" name="stock_detail" placeholder="Stock" readonly/>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +211,7 @@
 </div>
 
 <!-- Modal Eliminar Maquillaje -->
-<div class="modal fade" id="modalDeleteMakeup" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modal_delete_makeup" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header bg-danger">
@@ -220,8 +220,8 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form id="formDeleteMakeup">
-                <input type="hidden" id="idDelete" name="idDelete">
+            <form id="form_delete_makeup">
+                <input type="hidden" id="id_delete" name="id_delete">
                 <div class="modal-body text-center text-danger">¿Deseas eliminar este maquillaje?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
@@ -238,14 +238,14 @@
 
 <script>
 $(document).ready(function (){
-    showMakeups();
-    submitFormRegister();
-    submitFormUpdate();
-    deleteRecord();
+    show_makeups();
+    submit_form_register();
+    submit_form_update();
+    delete_record();
 });
 
-var showMakeups = function() {
-    var tableMakeup = $('#dataTableMakeup').DataTable({
+var show_makeups = function() {
+    var table_makeup = $('#data_table_makeup').DataTable({
         "processing": true,
         "ajax": {
             "url": "<?php echo constant('URL');?>makeup/read"
@@ -259,9 +259,9 @@ var showMakeups = function() {
             { "data": "stock" },
             {data:null,
                 "defaultContent":
-                    `<button class='view btn btn-primary' data-toggle='modal' data-target='#modalDetailMakeup'><i class="fa fa-eye"></i></button>
-                     <button class='edit btn btn-warning' data-toggle='modal' data-target='#modalUpdateMakeup'><i class="fa fa-edit"></i></button>
-                     <button class='delete btn btn-danger' data-toggle='modal' data-target='#modalDeleteMakeup'><i class="far fa-trash-alt"></i></button>`
+                    `<button class='view btn btn-primary' data-toggle='modal' data-target='#modal_detail_makeup'><i class="fa fa-eye"></i></button>
+                     <button class='edit btn btn-warning' data-toggle='modal' data-target='#modal_update_makeup'><i class="fa fa-edit"></i></button>
+                     <button class='delete btn btn-danger' data-toggle='modal' data-target='#modal_delete_makeup'><i class="far fa-trash-alt"></i></button>`
             }
         ],
         responsive: true,
@@ -271,33 +271,33 @@ var showMakeups = function() {
         buttons: ['copy', 'excel', 'csv', 'pdf', 'colvis'],
         dom: 'Bfltip'
     });
-    getDataFromDT(tableMakeup);
+    get_data_from_dt(table_makeup);
 }
 
-var getDataFromDT = function (table) {
-    $('#dataTableMakeup tbody').on('click', 'tr', function() {
+var get_data_from_dt = function (table) {
+    $('#data_table_makeup tbody').on('click', 'tr', function() {
         var data = table.row(this).data();
         if (!data) return; 
-        $("#idDelete").val(data.id);
-        $("#idUpdate").val(data.id);
-        $("#nameUpdate").val(data.name);
-        $("#brandUpdate").val(data.brand);
-        $("#typeUpdate").val(data.type);
-        $("#priceUpdate").val(data.price);
-        $("#stockUpdate").val(data.stock);
+        $("#id_delete").val(data.id);
+        $("#id_update").val(data.id);
+        $("#name_update").val(data.name);
+        $("#brand_update").val(data.brand);
+        $("#type_update").val(data.type);
+        $("#price_update").val(data.price);
+        $("#stock_update").val(data.stock);
 
-        $("#nameDetail").val(data.name);
-        $("#brandDetail").val(data.brand);
-        $("#typeDetail").val(data.type);
-        $("#priceDetail").val(data.price);
-        $("#stockDetail").val(data.stock);
+        $("#name_detail").val(data.name);
+        $("#brand_detail").val(data.brand);
+        $("#type_detail").val(data.type);
+        $("#price_detail").val(data.price);
+        $("#stock_detail").val(data.stock);
     });
 }
 
-var submitFormRegister = function () {
+var submit_form_register = function () {
     $.validator.setDefaults({
         submitHandler: function () {
-            var datos = $('#formRegisterMakeup').serialize();
+            var datos = $('#form_register_makeup').serialize();
             $.ajax({
                 type: "POST",
                 url: "<?php echo constant('URL');?>makeup/insert",
@@ -316,7 +316,8 @@ var submitFormRegister = function () {
             });
         }
     });
-    $('#formRegisterMakeup').validate({
+    
+    $('#form_register_makeup').validate({
         rules: {
             name: { required: true },
             brand: { required: true },
@@ -341,10 +342,10 @@ var submitFormRegister = function () {
     });
 }
 
-var submitFormUpdate = function () {
+var submit_form_update = function () {
     $.validator.setDefaults({
         submitHandler: function () {
-            var datos = $('#formUpdateMakeup').serialize();
+            var datos = $('#form_update_makeup').serialize();
             $.ajax({
                 type: "POST",
                 url: "<?php echo constant('URL');?>makeup/update",
@@ -363,20 +364,20 @@ var submitFormUpdate = function () {
             });
         }
     });
-    $('#formUpdateMakeup').validate({
+    $('#form_update_makeup').validate({
         rules: {
-            nameUpdate: { required: true },
-            brandUpdate: { required: true },
-            typeUpdate: { required: true },
-            priceUpdate: { required: true },
-            stockUpdate: { required: true }
+            name_update: { required: true },
+            brand_update: { required: true },
+            type_update: { required: true },
+            price_update: { required: true },
+            stock_update: { required: true }
         },
         messages: {
-            nameUpdate: { required: "Ingresa un nombre" },
-            brandUpdate: { required: "Ingresa una marca" },
-            typeUpdate: { required: "Ingresa un tipo" },
-            priceUpdate: { required: "Ingresa un precio" },
-            stockUpdate: { required: "Ingresa el stock" }
+            name_update: { required: "Ingresa un nombre" },
+            brand_update: { required: "Ingresa una marca" },
+            type_update: { required: "Ingresa un tipo" },
+            price_update: { required: "Ingresa un precio" },
+            stock_update: { required: "Ingresa el stock" }
         },
         errorElement: 'span',
         errorPlacement: function (error, element) {
@@ -388,10 +389,10 @@ var submitFormUpdate = function () {
     });
 }
 
-var deleteRecord = function () {
-    $("#formDeleteMakeup").submit(function(event) {
+var delete_record = function () {
+    $("#form_delete_makeup").submit(function(event) {
         event.preventDefault();
-        var datos = $('#formDeleteMakeup').serialize();
+        var datos = $('#form_delete_makeup').serialize();
         $.ajax({
             type: "POST",
             url: "<?php echo constant('URL');?>makeup/delete",

@@ -11,11 +11,11 @@
         }
 
         function insert() {
-            $name   = $_POST['name'];
-            $brand  = $_POST['brand'];
-            $type   = $_POST['type'];
-            $price  = $_POST['price'];
-            $stock  = $_POST['stock'];
+            $name  = $_POST['name'];
+            $brand = $_POST['brand'];
+            $type  = $_POST['type'];
+            $price = $_POST['price'];
+            $stock = $_POST['stock'];
 
             $data = array(
                 'name'  => $name,
@@ -32,20 +32,20 @@
         }
 
         function update() {
-            $id     = $_POST['idUpdate'];
-            $name   = $_POST['nameUpdate'];
-            $brand  = $_POST['brandUpdate'];
-            $type   = $_POST['typeUpdate'];
-            $price  = $_POST['priceUpdate'];
-            $stock  = $_POST['stockUpdate'];
+            $id    = $_POST['id_update'];
+            $name  = $_POST['name_update'];
+            $brand = $_POST['brand_update'];
+            $type  = $_POST['type_update'];
+            $price = $_POST['price_update'];
+            $stock = $_POST['stock_update'];
 
             $data = array(
-                'idUpdate'    => $id,
-                'nameUpdate'  => $name,
-                'brandUpdate' => $brand,
-                'typeUpdate'  => $type,
-                'priceUpdate' => $price,
-                'stockUpdate' => $stock
+                'id_update'    => $id,
+                'name_update'  => $name,
+                'brand_update' => $brand,
+                'type_update'  => $type,
+                'price_update' => $price,
+                'stock_update' => $stock
             );
 
             require 'model/makeupDAO.php';
@@ -55,8 +55,7 @@
         }
 
         function delete(){
-            $id = $_POST['idDelete'];
-
+            $id = $_POST['id_delete'];
             require 'model/makeupDAO.php';
             $this->loadModel('makeupDAO');
             $makeupDAO = new MakeupDAO();
