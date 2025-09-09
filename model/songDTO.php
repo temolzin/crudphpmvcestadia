@@ -17,6 +17,7 @@
                 $this->$property = $value;
             }
         }
+        
         /**
          * Specify data which should be serialized to JSON
          * @link https://php.net/manual/en/jsonserializable.jsonserialize.php
