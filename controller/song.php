@@ -1,6 +1,5 @@
 <?php
     class Song extends Controller
-
     {
         function __construct()
         {
@@ -61,6 +60,5 @@
             $SongDAO = new SongDAO();
             $SongDAO = $SongDAO->read();
             echo $SongDAO;
-
         }
     }
