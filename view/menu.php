@@ -386,6 +386,7 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
                             <a id="videogame" name="videogame" href="'.constant('URL').'videogame" class="nav-link">
                               <i class="nav-icon fa fa-gamepad"></i>
                               <p>
