@@ -378,6 +378,7 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
                             <a id="weather" name="weather" href="'.constant('URL').'weather" class="nav-link">
                               <i class="nav-icon fa fa-bolt"></i>
                               <p>
@@ -398,6 +399,14 @@
                               <i class="nav-icon fa fa-trophy"></i>
                               <p>
                                 Jugador
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="clothes" name="clothes" href="'.constant('URL').'clothes" class="nav-link">
+                              <i class="nav-icon fa fa fa-shopping-bag"></i>
+                              <p>
+                                Ropa
                               </p>
                             </a>
                           </li>

@@ -135,12 +135,22 @@ CREATE TABLE weather(
     name_weather varchar(50)
 );
 
+
+CREATE TABLE clothes(
+	id_clothes int primary key auto_increment,
+	products_clothes varchar(30),
+	categories_clothes varchar(30),
+	size_clothes varchar(30),
+	price_clothes decimal(9,2)
+);
+
 CREATE TABLE videogame(
     id_videogame int primary key auto_increment,
     title_videogame varchar(50),
     gender_videogame varchar(50),
     price_videogame int,
     release_date_videogame DATE
+
 );
 
 CREATE TABLE player (
@@ -150,6 +160,7 @@ CREATE TABLE player (
     age_player INT,
     position_player VARCHAR(50),
     jersey_number_player INT
+
 );
 
 CREATE TABLE Makeup (
@@ -167,5 +178,5 @@ CREATE TABLE song(
     artist_song varchar(50),
     duration_song varchar(50),
     record_song varchar(50),
-	year_launch_song int
+	  year_launch_song int
 );
