@@ -150,3 +150,11 @@ CREATE TABLE player (
     numero_camiseta INT
 
 );
+
+CREATE TABLE clothes(
+	id_clothes int primary key auto_increment,
+	products_clothes varchar(30),
+	categories_clothes varchar(30),
+	size_clothes varchar(30),
+	price_clothes decimal(9,2)
+);

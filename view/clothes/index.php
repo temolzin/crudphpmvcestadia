@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-right">
-                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegistrarClothes'> <i class="fas fa-plus-circle"></i> Registrar Prenda </button>
+                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegisterClothes'> <i class="fas fa-plus-circle"></i> Registrar Prenda </button>
             </div>
         </div>
         <br>
@@ -40,7 +40,7 @@
 
 <!--*****************************************MODALS****************************************-->
 <!--------------------------------------------------------- Modal Registrar----------------------------------------------->
-<div class="modal fade" id="modalRegistrarClothes" tabindex="-1" role="dialog" aria-labelledby="modalRegistrarClothes" aria-hidden="true">
+<div class="modal fade" id="modalRegisterClothes" tabindex="-1" role="dialog" aria-labelledby="modalRegisterClothes" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-success">
@@ -54,7 +54,7 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formRegistrarClothes" name="formRegistrarClothes" method="post">
+                <form role="form" id="formRegisterClothes" name="formRegisterClothes" method="post">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
@@ -94,7 +94,7 @@
 </div>
 
 <!--------------------------------------------------------- Modal Actualizar----------------------------------------------->
-<div class="modal fade" id="modalActualizarClothes" tabindex="-1" role="dialog" aria-labelledby="modalActualizarClothes" aria-hidden="true">
+<div class="modal fade" id="modalUpdateClothes" tabindex="-1" role="dialog" aria-labelledby="modalUpdateClothes" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-warning">
@@ -108,7 +108,7 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formActualizarClothes" name="formActualizarClothes">
+                <form role="form" id="formUpdateClothes" name="formUpdateClothes">
                     <div class="card-body">
                     <div class="row">
                             <div class="col-lg-12">
@@ -122,25 +122,25 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Producto (*)</label>
-                                    <input type="text" class="form-control" id="productUpdate" name="productUpdate" placeholder="Ej: Falda"/>
+                                    <input type="text" class="form-control" id="clothesProductUpdate" name="clothesProductUpdate" placeholder="Ej: Falda"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Categoria (*)</label>
-                                    <input type="text" class="form-control" id="categoryUpdate" name="categoryUpdate" placeholder="Ej: Mujer"/>
+                                    <input type="text" class="form-control" id="clothesCategoryUpdate" name="clothesCategoryUpdate" placeholder="Ej: Mujer"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Talla (*)</label>
-                                    <input type="text" class="form-control" id="sizeUpdate" name="sizeUpdate" placeholder="Ej: Mediano"/>
+                                    <input type="text" class="form-control" id="clothesSizeUpdate" name="clothesSizeUpdate" placeholder="Ej: Mediano"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Precio (*)</label>
-                                    <input type="text" class="form-control" id="priceUpdate" name="priceUpdate" placeholder="Ej: 149.99"/>
+                                    <input type="text" class="form-control" id="clothesPriceUpdate" name="clothesPriceUpdate" placeholder="Ej: 149.99"/>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
 </div>
 
 <!--------------------------------------------------------- Modal DetalleClothes----------------------------------------------->
-<div class="modal fade" id="modalDetalleClothes" tabindex="-1" role="dialog" aria-labelledby="modalDetalleClothes" aria-hidden="true">
+<div class="modal fade" id="modalDetailClothes" tabindex="-1" role="dialog" aria-labelledby="modalDetailClothes" aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-primary">
@@ -170,13 +170,13 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form role="form" id="formConsulta" name="formConsulta">
+                <form role="form" id="formConsult" name="formConsult">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Matrícula (*)</label>
-                                    <input disabled type="text" class="form-control" id="clothesIdConsultar" name="clothesIdConsultar" placeholder="Matricula"/>
+                                    <input disabled type="text" class="form-control" id="clothesIdConsult" name="clothesIdConsult" placeholder="Matricula"/>
                                 </div>
                             </div>
                         </div>
@@ -184,25 +184,25 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Producto (*)</label>
-                                    <input type="text" disabled class="form-control" id="productConsultar" name="productConsultar" placeholder="Ej: Falda"/>
+                                    <input type="text" disabled class="form-control" id="productConsult" name="productConsult" placeholder="Ej: Falda"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Categoria (*)</label>
-                                    <input type="text" disabled class="form-control" id="categoryConsultar" name="categoryConsultar" placeholder="Ej: Mujer"/>
+                                    <input type="text" disabled class="form-control" id="categoryConsult" name="categoryConsult" placeholder="Ej: Mujer"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Talla (*)</label>
-                                    <input type="text" disabled class="form-control" id="sizeConsultar" name="sizeConsultar" placeholder="Ej: Mediano"/>
+                                    <input type="text" disabled class="form-control" id="sizeConsult" name="sizeConsult" placeholder="Ej: Mediano"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Precio (*)</label>
-                                    <input type="text" disabled class="form-control" id="priceConsultar" name="priceConsultar" placeholder="Ej: 149.99"/>
+                                    <input type="text" disabled class="form-control" id="priceConsult" name="priceConsult" placeholder="Ej: 149.99"/>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
 </div>
 
 <!-- ****************************** Modal EliminarClothes *************************************************-->
-<div class="modal fade" id="modalEliminarClothes" tabindex="-1" role="dialog" aria-labelledby="modalEliminarClothes" aria-hidden="true">
+<div class="modal fade" id="modalDeleteClothes" tabindex="-1" role="dialog" aria-labelledby="modalDeleteClothes" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header bg-danger">
@@ -226,7 +226,7 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form role="form" id="formEliminarClothes" name="formActualizarClothes">
+            <form role="form" id="formDeleteClothes" name="formUpdateClothes">
                 <input type="text" hidden id="clothesIdDelete" name="clothesIdDelete">
                 <div class="modal-body text-center text-danger">¿Realmente deseas eliminar esta Clothesa?</div>
                 <div class="modal-footer">
@@ -245,13 +245,13 @@
 <script>
 
     $(document).ready(function (){
-        mostrarClothes();
-        enviarFormularioRegistrar();
-        enviarFormularioActualizar();
-        eliminarRegistro();
+        showClothes();
+        sendRegisterForm();
+        sendUpdateForm();
+        deleteRegister();
     });
 
-    var mostrarClothes = function() {
+    var showClothes = function() {
         var tableClothes = $('#dataTableClothes').DataTable({
             "processing": true,
             "ajax": {
@@ -265,9 +265,9 @@
                 { "data": "price_clothes" },
                 {data:null,
                     "defaultContent":
-                        `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetalleClothes' title="Ver Detalles"><i class="fa fa-eye"></i></button>
-                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalActualizarClothes' title="Editar Datos"><i class="fa fa-edit"></i></button>
-                         <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalEliminarClothes' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
+                        `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetailClothes' title="Ver Detalles"><i class="fa fa-eye"></i></button>
+                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalUpdateClothes' title="Editar Datos"><i class="fa fa-edit"></i></button>
+                         <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalDeleteClothes' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
                 }
             ],
             responsive: true,
@@ -277,32 +277,32 @@
             buttons: ['copy', 'excel', 'csv', 'pdf', 'colvis'],
             dom: 'Bfltip'
         });
-        obtenerdatosDT(tableClothes);
+        getDataDT(tableClothes);
     }
 
-    var obtenerdatosDT = function (table) {
+    var getDataDT = function (table) {
         $('#dataTableClothes tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
-            var idEliminar = $('#clothesIdDelete').val(data.id_clothes);
+            var idDelete = $('#clothesIdDelete').val(data.id_clothes);
 
-            var idActualizar = $("#clothesIdUpdate").val(data.id_clothes);
-            var productActualizar = $("#productUpdate").val(data.products_clothes);
-            var categoryActualizar = $("#categoryUpdate").val(data.categories_clothes);
-            var sizeActualizar = $("#sizeUpdate").val(data.size_clothes);
-            var priceActualizar = $("#priceUpdate").val(data.price_clothes);
+            var idUpdate = $("#clothesIdUpdate").val(data.id_clothes);
+            var productUpdate = $("#clothesProductUpdate").val(data.products_clothes);
+            var categoryUpdate = $("#clothesCategoryUpdate").val(data.categories_clothes);
+            var sizeUpdate = $("#clothesSizeUpdate").val(data.size_clothes);
+            var priceUpdate = $("#clothesPriceUpdate").val(data.price_clothes);
 
-            var idConsultar = $("#clothesIdConsultar").val(data.id_clothes);
-            var productConsultar = $("#productConsultar").val(data.products_clothes);
-            var categoryConsultar = $("#categoryConsultar").val(data.categories_clothes);
-            var sizeConsultar = $("#sizeConsultar").val(data.size_clothes);
-            var priceConsultar = $("#priceConsultar").val(data.price_clothes);
+            var idConsultar = $("#clothesIdConsult").val(data.id_clothes);
+            var productConsult = $("#productConsult").val(data.products_clothes);
+            var categoryConsult = $("#categoryConsult").val(data.categories_clothes);
+            var sizeConsult = $("#sizeConsult").val(data.size_clothes);
+            var priceConsult = $("#priceConsult").val(data.price_clothes);
         });
     }
 
-    var enviarFormularioRegistrar = function () {
+    var sendRegisterForm = function () {
         $.validator.setDefaults({
             submitHandler: function () {
-                var datos = $('#formRegistrarClothes').serialize();
+                var datos = $('#formRegisterClothes').serialize();
                 $.ajax({
                     type: "POST",
                     url: "<?php echo constant('URL');?>clothes/insert",
@@ -327,7 +327,7 @@
                 });
             }
         });
-        $('#formRegistrarClothes').validate({
+        $('#formRegisterClothes').validate({
             rules: {
                 product: {
                     required: true
@@ -370,10 +370,10 @@
         });
     }
 
-    var enviarFormularioActualizar = function () {
+    var sendUpdateForm = function () {
         $.validator.setDefaults({
             submitHandler: function () {
-                var datos = $('#formActualizarClothes').serialize();
+                var datos = $('#formUpdateClothes').serialize();
                 $.ajax({
                     type: "POST",
                     url: "<?php echo constant('URL');?>clothes/update",
@@ -398,7 +398,7 @@
                 });
             }
         });
-        $('#formActualizarClothes').validate({
+        $('#formUpdateClothes').validate({
             rules: {
                 product: {
                     required: true
@@ -441,10 +441,10 @@
         });
     }
 
-    var eliminarRegistro = function () {
-        $( "#formEliminarClothes" ).submit(function( event ) {
+    var deleteRegister = function () {
+        $( "#formDeleteClothes" ).submit(function( event ) {
             event.preventDefault();
-            var datos = $('#formEliminarClothes').serialize();
+            var datos = $('#formDeleteClothes').serialize();
             $.ajax({
                 type: "POST",
                 url: "<?php echo constant('URL');?>clothes/delete",

@@ -26,10 +26,10 @@
 
         function update() {
             $id = $_POST['clothesIdUpdate'];
-            $product = $_POST['productUpdate'];
-            $category = $_POST['categoryUpdate'];
-            $size = $_POST['sizeUpdate'];
-            $price = $_POST['priceUpdate'];
+            $product = $_POST['clothesProductUpdate'];
+            $category = $_POST['clothesCategoryUpdate'];
+            $size = $_POST['clothesSizeUpdate'];
+            $price = $_POST['clothesPriceUpdate'];
 
             $data = array('id' => $id, 'product' => $product, 'category' => $category, 'size' => $size, 'price' => $price);
 
