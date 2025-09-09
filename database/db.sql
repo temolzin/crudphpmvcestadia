@@ -135,9 +135,9 @@ CREATE TABLE weather(
 
 CREATE TABLE song(
     id_song int primary key auto_increment,
-    nombre_song varchar(50),
-    artista_song varchar(50),
-    duracion_song varchar(50),
-    disquera_song varchar(50),
-	anio_lanzamiento_song int
+    name_song varchar(50),
+    artist_song varchar(50),
+    duration_song varchar(50),
+    record_song varchar(50),
+	year_launch_song int
 );

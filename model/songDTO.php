@@ -1,11 +1,11 @@
 <?php
     class SongDTO implements JsonSerializable {
         private $id_song;
-        private $nombre_song;
-        private $artista_song;
-        private $duracion_song;
-        private $disquera_song;
-        private $anio_lanzamiento_song;
+        private $name_song;
+        private $artist_song;
+        private $duration_song;
+        private $record_song;
+        private $year_launch_song;
 
         public function __get($property){
             if(property_exists($this, $property)) {

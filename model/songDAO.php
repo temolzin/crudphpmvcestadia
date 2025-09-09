@@ -7,21 +7,21 @@
 
         public function insert($data)
         {
-            $query = $this->db->conectar()->prepare('INSERT INTO song values (:song_id, :nombre_song, :artista_song, :duracion_song, :disquera_song, :anio_lanzamiento_song)');
-        $query->execute([':song_id' => null, ':nombre_song' => $data['nombreSong'], ':artista_song' => $data['artistaSong'], ':duracion_song' => $data['duracionSong'], ':disquera_song' => $data['disqueraSong'], ':anio_lanzamiento_song' => $data['añolanzamientoSong']]);
+            $query = $this->db->conectar()->prepare('INSERT INTO song values (:song_id, :name_song, :artist_song, :duration_song, :record_song, :year_launch_song)');
+        $query->execute([':song_id' => null, ':name_song' => $data['nameSong'], ':artist_song' => $data['artistSong'], ':duration_song' => $data['durationSong'], ':record_song' => $data['recordSong'], ':year_launch_song' => $data['year_launch_Song']]);
             echo 'ok';
         }
 
         public function update($data)
         {
-         $query = $this->db->conectar()->prepare('UPDATE song SET nombre_song = :nombre_song, artista_song = :artista_song, duracion_song = :duracion_song, disquera_song = :disquera_song, anio_lanzamiento_song = :anio_lanzamiento_song WHERE id_song = :id_song');
+         $query = $this->db->conectar()->prepare('UPDATE song SET name_song = :name_song, artist_song = :artist_song, duration_song = :duration_song, record_song = :record_song, year_launch_song = :year_launch_song WHERE id_song = :id_song');
          $query->execute([
             ':id_song' => $data['idSong'],
-            ':nombre_song' => $data['nombreSong'],
-            ':artista_song' => $data['artistaSong'],
-            ':duracion_song' => $data['duracionSong'],
-            ':disquera_song' => $data['disqueraSong'],
-            ':anio_lanzamiento_song' => $data['añolanzamientoSong']
+            ':name_song' => $data['nameSong'],
+            ':artist_song' => $data['artistSong'],
+            ':duration_song' => $data['durationSong'],
+            ':record_song' => $data['recordSong'],
+            ':year_launch_song' => $data['yearlaunchSong']
         ]);
             echo 'ok';
         }
@@ -41,11 +41,11 @@
             foreach ($this->db->consultar($query) as $key => $value) {
                 $song = new SongDTO();
                 $song->id_song = $value['id_song'];
-                $song->nombre_song = $value['nombre_song'];
-                $song->artista_song = $value['artista_song'];
-                $song->duracion_song = $value['duracion_song'];
-                $song->disquera_song = $value['disquera_song'];
-                $song->anio_lanzamiento_song = $value['anio_lanzamiento_song'];
+                $song->name_song = $value['name_song'];
+                $song->artist_song = $value['artist_song'];
+                $song->duration_song = $value['duration_song'];
+                $song->record_song = $value['record_song'];
+                $song->year_launch_song = $value['year_launch_song'];
                 $objSongs['data'][] = $song;
             }
             echo json_encode($objSongs, JSON_UNESCAPED_UNICODE);

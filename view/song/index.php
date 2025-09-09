@@ -54,13 +54,13 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombreSong" name="nombreSong" placeholder="Nombre"/>
+                                    <input type="text" class="form-control" id="name_song" name="name_song" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Artista (*)</label>
-                                    <input type="text" class="form-control" id="artistaSong" name="artistaSong" placeholder="Artista"/>
+                                    <input type="text" class="form-control" id="artist_song" name="artist_song" placeholder="Artista"/>
                                 </div>
                             </div>
                         </div>
@@ -68,19 +68,19 @@
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Duración (*)</label>
-                                    <input type="text" class="form-control" id="duracionSong" name="duracionSong" placeholder="Ej: 03:45"/>
+                                    <input type="text" class="form-control" id="duration_song" name="duration_song" placeholder="Ej: 03:45"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Disquera (*)</label>
-                                    <input type="text" class="form-control" id="disqueraSong" name="disqueraSong" placeholder="Disquera"/>
+                                    <input type="text" class="form-control" id="record_song" name="record_song" placeholder="Disquera"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Año de lanzamiento (*)</label>
-                                    <input type="text" class="form-control" id="añolanzamientoSong" name="añolanzamientoSong" placeholder="YYYY"/>
+                                    <input type="text" class="form-control" id="year_launch_song" name="year_launch_song" placeholder="YYYY"/>
                                 </div>
                             </div>
                         </div>
@@ -97,27 +97,27 @@
 
 
 <!-- **************** MODAL ACTUALIZAR **************** -->
-<div class="modal fade" id="modalActualizarSong" tabindex="-1" role="dialog" aria-labelledby="modalActualizarSong" aria-hidden="true">
+<div class="modal fade" id="modalUpdateSong" tabindex="-1" role="dialog" aria-labelledby="modalUpdateSong" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="card-warning">
                 <div class="card-header">
-                    <h4 class="card-title">Actualizar Song</h4>
+                    <h4 class="card-title">Update Song</h4>
                 </div>
-                <form id="formActualizarSong">
+                <form id="formUpdateSong">
                     <div class="card-body">
-                        <input type="hidden" id="idSongActualizar" name="idSongActualizar"/>
+                        <input type="hidden" id="idSongUpdate" name="idSongUpdate"/>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" class="form-control" id="nombreSongActualizar" name="nombreSongActualizar"/>
+                                    <input type="text" class="form-control" id="nameSongUpdate" name="nameSongUpdate"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Artista (*)</label>
-                                    <input type="text" class="form-control" id="artistaSongActualizar" name="artistaSongActualizar"/>
+                                    <input type="text" class="form-control" id="artistSongUpdate" name="artistSongUpdate"/>
                                 </div>
                             </div>
                         </div>
@@ -125,26 +125,26 @@
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Duración (*)</label>
-                                    <input type="text" class="form-control" id="duracionSongActualizar" name="duracionSongActualizar"/>
+                                    <input type="text" class="form-control" id="durationSongUpdate" name="durationSongUpdate"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Disquera (*)</label>
-                                    <input type="text" class="form-control" id="disqueraSongActualizar" name="disqueraSongActualizar"/>
+                                    <input type="text" class="form-control" id="recordSongUpdate" name="recordSongUpdate"/>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label>Año de lanzamiento (*)</label>
-                                    <input type="text" class="form-control" id="añolanzamientoSongActualizar" name="añolanzamientoSongActualizar"/>
+                                    <input type="text" class="form-control" id="yearlaunchSongUpdate" name="yearlaunchSongUpdate"/>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-warning">Actualizar</button>
+                        <button type="submit" class="btn btn-warning">Update</button>
                     </div>
                 </form>
             </div>
@@ -182,31 +182,31 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Nombre (*)</label>
-                                    <input type="text" disabled class="form-control" id="nombreSongConsultar" name="nombreSongConsultar" placeholder="Nombre"/>
+                                    <input type="text" disabled class="form-control" id="nameSongConsultar" name="nameSongConsultar" placeholder="Nombre"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Artista (*)</label>
-                                    <input type="text" disabled class="form-control" id="apellidoSongConsultar" name="apellidoSongConsultar" placeholder="Artista"/>
+                                    <input type="text" disabled class="form-control" id="artistSongConsultar" name="artistSongConsultar" placeholder="Artista"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Artista (*)</label>
-                                    <input type="text" disabled class="form-control" id="duracionSongConsultar" name="duracionSongConsultar" placeholder="duracion"/>
+                                    <input type="text" disabled class="form-control" id="durationSongConsultar" name="durationSongConsultar" placeholder="duracion"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Artista (*)</label>
-                                    <input type="text" disabled class="form-control" id="disqueraSongConsultar" name="disqueraSongConsultar" placeholder="disquera"/>
+                                    <input type="text" disabled class="form-control" id="recordSongConsultar" name="recordSongConsultar" placeholder="disquera"/>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Artista (*)</label>
-                                    <input type="text" disabled class="form-control" id="añolanzamientoSongConsultar" name="añolanzamientoSongConsultar" placeholder="añolanzamiento"/>
+                                    <input type="text" disabled class="form-control" id="yearlaunchSongConsultar" name="yearlaunchSongConsultar" placeholder="añolanzamiento"/>
                                 </div>
                             </div>
                         </div>
@@ -230,7 +230,7 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form role="form" id="formEliminarSong" name="formActualizarSong">
+            <form role="form" id="formEliminarSong" name="formUpdateSong">
                 <input type="text" hidden id="idEliminarSong" name="idEliminarSong">
                 <div class="modal-body text-center text-danger">¿Realmente deseas eliminar este Song?</div>
                 <div class="modal-footer">
@@ -251,7 +251,7 @@
     $(document).ready(function (){
         mostrarSongs();
         enviarFormularioRegistrar();
-        enviarFormularioActualizar();
+        enviarFormularioUpdate();
         eliminarRegistro();
     });
 
@@ -263,15 +263,15 @@
             },
             "columns": [
                 { "data": "id_song" },
-                { "data": "nombre_song" },
-                { "data": "artista_song" },
-                { "data": "duracion_song" },
-                { "data": "disquera_song" },
-                { "data": "anio_lanzamiento_song" },
+                { "data": "name_song" },
+                { "data": "artist_song" },
+                { "data": "duration_song" },
+                { "data": "record_song" },
+                { "data": "year_launch_song" },
                 {data:null,
                     "defaultContent":
                         `<button class='consulta btn btn-primary' data-toggle='modal' data-target='#modalDetalleSong' title="Ver Detalles"><i class="fa fa-eye"></i></button>
-                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalActualizarSong' title="Editar Datos"><i class="fa fa-edit"></i></button>
+                         <button class='editar btn btn-warning' data-toggle='modal' data-target='#modalUpdateSong' title="Editar Datos"><i class="fa fa-edit"></i></button>
                          <button class='eliminar btn btn-danger' data-toggle='modal' data-target='#modalEliminarSong' title="Eliminar Registro"><i class="far fa-trash-alt"></i></button>`
                 }
             ],
@@ -290,19 +290,19 @@
             var data = table.row(this).data();
             var idEliminar = $('#idEliminarSong').val(data.id_song);
 
-            var idActualizar = $("#idSongActualizar").val(data.id_song);
-            var nombreSongActualizar = $("#nombreSongActualizar").val(data.nombre_song);
-            var artistaSongActualizar = $("#artistaSongActualizar").val(data.artista_song);
-            var duracionSongActualizar = $("#duracionSongActualizar").val(data.duracion_song);
-            var disqueraSongActualizar = $("#disqueraSongActualizar").val(data.disquera_song);
-            var añolanzamientoSongActualizar = $("#anioSongActualizar").val(data.anio_song);
+            var idUpdate = $("#idSongUpdate").val(data.id_song);
+            var nameSongUpdate = $("#nameSongUpdate").val(data.name_song);
+            var artistSongUpdate = $("#artistSongUpdate").val(data.artist_song);
+            var durationSongUpdate = $("#durationSongUpdate").val(data.duration_song);
+            var recordSongUpdate = $("#recordSongUpdate").val(data.record_song);
+            var yearlaunchSongUpdate = $("#yearlaunchSongUpdate").val(data.year_launch_song);
 
             var idConsulta = $("#idSongConsultar").val(data.id_song);
-            var nombreConsulta = $("#nombreSongConsultar").val(data.nombre_song);
-            var artistaConsulta = $("#apellidoSongConsultar").val(data.artista_song);
-            var duracionConsulta = $("#duracionSongConsultar").val(data.duracion_song);
-            var disqueraConsula =  $("#disqueraSongConsultar").val(data.disquera_song);
-            var aniolanzamientoConsulta = $("#anioSongConsultar").val(data.anio_song)
+            var nameConsulta = $("#nameSongConsultar").val(data.name_song);
+            var artistConsulta = $("#artistSongConsultar").val(data.artist_song);
+            var durationConsulta = $("#durationSongConsultar").val(data.duration_song);
+            var recordConsula =  $("#recordSongConsultar").val(data.record_song);
+            var yearlaunchConsulta = $("#yearlaunchSongConsultar").val(data.year_launch_song)
         });
     }
 
@@ -318,7 +318,7 @@ var enviarFormularioRegistrar = function () {
                     if (data == 'ok') {
                         Swal.fire(
                             "¡Éxito!",
-                            "La Song ha sido registrada de manera correcta",
+                            "La cancion ha sido registrada de manera correcta",
                             "success"
                         ).then(function () {
                             window.location = "<?php echo constant('URL');?>song";
@@ -391,10 +391,10 @@ var enviarFormularioRegistrar = function () {
 }
 
 
-var enviarFormularioActualizar = function () {
+var enviarFormularioUpdate = function () {
     $.validator.setDefaults({
         submitHandler: function () {
-            var datos = $('#formActualizarSong').serialize();
+            var datos = $('#formUpdateSong').serialize();
             $.ajax({
                 type: "POST",
                 url: "<?php echo constant('URL');?>song/update",
@@ -420,21 +420,21 @@ var enviarFormularioActualizar = function () {
         }
     });
 
-    $('#formActualizarSong').validate({
+    $('#formUpdateSong').validate({
         rules: {
-            nombreSongActualizar: {
+            nombreSongUpdate: {
                 required: true
             },
-            apellidosSongActualizar: {
+            apellidosSongUpdate: {
                 required: true
             },
-            duracionSongActualizar: {
+            duracionSongUpdate: {
                 required: true
             },
-            disqueraSongActualizar: {
+            disqueraSongUpdate: {
                 required: true
             },
-            anioSongActualizar: {
+            anioSongUpdate: {
                 required: true,
                 digits: true,
                 minlength: 4,
@@ -442,19 +442,19 @@ var enviarFormularioActualizar = function () {
             }
         },
         messages: {
-            nombreSongActualizar: {
+            nameSongUpdate: {
                 required: "Ingresa un nombre"
             },
-            apellidosSongActualizar: {
+            artistSongUpdate: {
                 required: "Ingresa un apellido"
             },
-            duracionSongActualizar: {
+            durationSongUpdate: {
                 required: "Ingresa la duración de la canción"
             },
-            disqueraSongActualizar: {
+            recordsSongUpdate: {
                 required: "Ingresa la disquera"
             },
-            anioSongActualizar: {
+            yearlaunchSongUpdate: {
                 required: "Ingresa el año de lanzamiento",
                 digits: "Solo se permiten números",
                 minlength: "Debe ser un año válido (4 dígitos)",
