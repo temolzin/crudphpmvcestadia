@@ -1,5 +1,4 @@
 <?php
-
     class SongDAO extends Model implements CRUD {
         public function __construct()
         {
