@@ -351,6 +351,10 @@
                               <i class="nav-icon fas fa-phone"></i>
                               <p>
                                 Celular
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="dulce" name="dulce" href="'.constant('URL').'dulce" class="nav-link">
                               <i class="nav-icon fas fa-ice-cream"></i>
                               <p>
@@ -363,6 +367,21 @@
                               <i class="nav-icon fa fa-female"></i>
                               <p>
                                 Maquillaje
+                              </p>
+                            </a>
+                          </li>
+                            <a id="weather" name="weather" href="'.constant('URL').'weather" class="nav-link">
+                              <i class="nav-icon fa fa-bolt"></i>
+                              <p>
+                                Clima
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="player" name="player" href="'.constant('URL').'player" class="nav-link">
+                              <i class="nav-icon fa fa-trophy"></i>
+                              <p>
+                                Jugador
                               </p>
                             </a>
                           </li>

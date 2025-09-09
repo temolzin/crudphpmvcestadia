@@ -128,11 +128,27 @@ CREATE TABLE dulce(
     sabor_dulce varchar(50)
 );
 
+
 CREATE TABLE Makeup (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,         -- Nombre del maquillaje
-    brand VARCHAR(50) NOT NULL,         -- Marca
-    type VARCHAR(50) NOT NULL,          -- Tipo (e.g., lipstick, foundation)
-    price DECIMAL(10,2) NOT NULL,       -- Precio
-    stock INT NOT NULL                   -- Cantidad en inventario
+    name VARCHAR(100) NOT NULL,         
+    brand VARCHAR(50) NOT NULL,         
+    type VARCHAR(50) NOT NULL,         
+    price DECIMAL(10,2) NOT NULL,       
+    stock INT NOT NULL                   
 );
+
+CREATE TABLE weather(
+    id_weather int primary key auto_increment,
+    name_weather varchar(50)
+);
+
+CREATE TABLE player (
+    id_player INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_player VARCHAR(100),
+    apellidos_player VARCHAR(100),
+    edad_player INT,
+    posicion_player VARCHAR(50),
+    numero_camiseta INT
+);
+
