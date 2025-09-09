@@ -363,6 +363,13 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="makeup" name="makeup" href="'.constant('URL').'makeup" class="nav-link">
+                              <i class="nav-icon fa fa-female"></i>
+                              <p>
+                                Maquillaje
+                              </p>
+                            </a>
+                          </li>
                             <a id="weather" name="weather" href="'.constant('URL').'weather" class="nav-link">
                               <i class="nav-icon fa fa-bolt"></i>
                               <p>
