@@ -1,5 +1,5 @@
 <?php
-define('URL', 'http://localhost:8081/crudphpmvcestadia/');
+define('URL', 'http://localhost/crudphpmvcestadia/');
 define('HOST', 'localhost');
 define('DB', 'estructuramvc');
 define('USER', 'root');
