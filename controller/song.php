@@ -1,8 +1,6 @@
 <?php
 
-    class Song extends Controller
-        
-    {
+    class Song extends Controller  {
         function __construct()
         {
             parent::__construct();
@@ -11,7 +9,6 @@
             $this->view->render('song/index');
         }
         
-
         function insert() {
             $nameSong = $_POST['name_song'];
             $artistSong = $_POST['artist_song'];
