@@ -6,6 +6,14 @@
         private $album;
         private $year;
 
+        private $id_song;
+        private $name_song;
+        private $artist_song;
+        private $duration_song;
+        private $record_song;
+        private $year_launch_song;
+
+
         public function __get($property){
             if(property_exists($this, $property)) {
                 return $this->$property;

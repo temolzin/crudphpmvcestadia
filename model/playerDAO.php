@@ -7,15 +7,15 @@
 
         public function insert($data)
         {
-            $query = $this->db->conectar()->prepare('INSERT INTO player values (:id_player, :nombre_player, :apellidos_player, :edad_player, :posicion_player, :numero_camiseta)');
-            $query->execute([':id_player' => null, ':nombre_player' => $data['firstName'],':apellidos_player' => $data['lastName'], ':edad_player' => $data['age'], ':posicion_player' => $data['position'], ':numero_camiseta' => $data['jerseyNumber']]);
+            $query = $this->db->conectar()->prepare('INSERT INTO player values (:id_player, :first_name_player, :last_name_player, :age_player, :position_player, :jersey_number_player)');
+            $query->execute([':id_player' => null, ':first_name_player' => $data['firstName'], ':last_name_player' => $data['lastName'], ':age_player' => $data['age'], ':position_player' => $data['position'], ':jersey_number_player' => $data['jerseyNumber']]);
             echo 'ok';
         }
 
         public function update($data)
         {
-            $query = $this->db->conectar()->prepare('UPDATE player SET  nombre_player = :nombre_player, apellidos_player = :apellidos_player, edad_player = :edad_player, posicion_player = :posicion_player, numero_camiseta = :numero_camiseta WHERE id_player = :id_player');
-            $query->execute([':id_player' => $data['idPlayer'],':nombre_player' => $data['firstName'],':apellidos_player' => $data['lastName'], ':edad_player' => $data['age'], ':posicion_player' => $data['position'], ':numero_camiseta' => $data['jerseyNumber']]);
+            $query = $this->db->conectar()->prepare('UPDATE player SET  first_name_player = :first_name_player, last_name_player = :last_name_player, age_player = :age_player, position_player = :position_player, jersey_number_player = :jersey_number_player WHERE id_player = :id_player');
+            $query->execute([':id_player' => $data['idPlayer'], ':first_name_player' => $data['firstName'], ':last_name_player' => $data['lastName'], ':age_player' => $data['age'], ':position_player' => $data['position'], ':jersey_number_player' => $data['jerseyNumber']]);
             echo 'ok';
         }
 
@@ -33,12 +33,12 @@
             $objPlayers = array();
             foreach ($this->db->consultar($query) as $key => $value) {
                 $player = new PlayerDTO();
-                $player->id_player = $value['id_player'];
-                $player->nombre_player = $value['nombre_player'];
-                $player->apellidos_player = $value['apellidos_player'];
-                $player->edad_player = $value['edad_player'];
-                $player->posicion_player = $value['posicion_player'];
-                $player->numero_camiseta = $value['numero_camiseta'];
+                $player->idPlayer = $value['id_player'];
+                $player->firstNamePlayer = $value['first_name_player'];
+                $player->lastNamePlayer = $value['last_name_player'];
+                $player->agePlayer = $value['age_player'];
+                $player->positionPlayer = $value['position_player'];
+                $player->jerseyNumberPlayer = $value['jersey_number_player'];
                 $objPlayers['data'][] = $player;
             }
             echo json_encode($objPlayers, JSON_UNESCAPED_UNICODE);

@@ -1,0 +1,36 @@
+[1mdiff --git a/database/db.sql b/database/db.sql[m
+[1mindex b2c0a95..5196c79 100644[m
+[1m--- a/database/db.sql[m
+[1m+++ b/database/db.sql[m
+[36m@@ -132,3 +132,12 @@[m [mCREATE TABLE weather([m
+     id_weather int primary key auto_increment,[m
+     name_weather varchar(50)[m
+ );[m
+[32m+[m
+[32m+[m[32mCREATE TABLE song([m
+[32m+[m[32m    id_song int primary key auto_increment,[m
+[32m+[m[32m    nombre_song varchar(50),[m
+[32m+[m[32m    artista_song varchar(50),[m
+[32m+[m[32m    duracion_song varchar(50),[m
+[32m+[m[32m    disquera_song varchar(50),[m
+[32m+[m	[32manio_lanzamiento_song int[m
+[32m+[m[32m);[m
+[1mdiff --git a/view/menu.php b/view/menu.php[m
+[1mindex 9c12170..e2f2aab 100644[m
+[1m--- a/view/menu.php[m
+[1m+++ b/view/menu.php[m
+[36m@@ -379,6 +379,14 @@[m
+                               </p>[m
+                             </a>[m
+                           </li>[m
+[32m+[m[32m                          <li class="nav-item">[m
+[32m+[m[32m                            <a id="song" name="song" href="'.constant('URL').'song" class="nav-link">[m
+[32m+[m[32m                              <i class="nav-icon fa fa-play"></i>[m
+[32m+[m[32m                              <p>[m
+[32m+[m[32m                                Cancion[m
+[32m+[m[32m                              </p>[m
+[32m+[m[32m                            </a>[m
+[32m+[m[32m                          </li>[m[41m                      [m
+                           <li class="nav-item">[m
+                             <a href="#" class="nav-link">[m
+                               <i class="nav-icon fas fa-copy"></i>[m
