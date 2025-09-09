@@ -20,21 +20,21 @@
 
         public function update($data)
         {
-            $query = $this->db->conectar()->prepare('UPDATE videogame SET title_videogame = :title_videogameActualizar, gender_videogame = :gender_videogameActualizar, price_videogame = :price_videogameActualizar, release_date_videogame = :release_date_videogameActualizar WHERE id_videogame = :idVideogameActualizar');
+            $query = $this->db->conectar()->prepare('UPDATE videogame SET title_videogame = :title_videogame_update, gender_videogame = :gender_videogame_update, price_videogame = :price_videogame_update, release_date_videogame = :release_date_videogame_update WHERE id_videogame = :id_videogame_update');
             $query->execute([
-                ':idVideogameActualizar' => $data['idVideogameActualizar'],
-                ':title_videogameActualizar' => $data['title_videogameActualizar'],
-                ':gender_videogameActualizar' => $data['gender_videogameActualizar'],
-                ':price_videogameActualizar' => $data['price_videogameActualizar'],
-                ':release_date_videogameActualizar' => $data['release_date_videogameActualizar']
+                ':id_videogame_update' => $data['id_videogame_update'],
+                ':title_videogame_update' => $data['title_videogame_update'],
+                ':gender_videogame_update' => $data['gender_videogame_update'],
+                ':price_videogame_update' => $data['price_videogame_update'],
+                ':release_date_videogame_update' => $data['release_date_videogame_update']
             ]);
             echo 'ok';
         }
 
         public function delete($id)
         {
-            $query = $this->db->conectar()->prepare('DELETE FROM videogame where id_videogame = :idVideogameEliminar');
-            $query->execute([':idVideogameEliminar' => $id]);
+            $query = $this->db->conectar()->prepare('DELETE FROM videogame where id_videogame = :id_videogame_delete');
+            $query->execute([':id_videogame_delete' => $id]);
             echo 'ok';
         }
 
