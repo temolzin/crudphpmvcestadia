@@ -129,6 +129,21 @@ CREATE TABLE dulce(
 );
 
 
+CREATE TABLE weather(
+    id_weather int primary key auto_increment,
+    name_weather varchar(50)
+);
+
+CREATE TABLE player (
+    id_player INT AUTO_INCREMENT PRIMARY KEY,
+    first_name_player VARCHAR(100),
+    last_name_player VARCHAR(100),
+    age_player INT,
+    position_player VARCHAR(50),
+    jersey_number_player INT
+);
+
+
 CREATE TABLE Makeup (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,         
@@ -137,4 +152,5 @@ CREATE TABLE Makeup (
     price DECIMAL(10,2) NOT NULL,       
     stock INT NOT NULL                   
 );
+
 
