@@ -22,19 +22,19 @@
             $videogameDAO = new videogameDAO();
             $videogameDAO->insert($data);
         }
-
+        
         function update() {
-            $nombre = $_POST['title_videogameActualizar'];
-            $cantidad = $_POST['gender_videogameActualizar'];
-            $precio = $_POST['price_videogameActualizar'];
-            $date = $_POST['release_date_videogameActualizar'];
-            $id = $_POST['idVideogameActualizar'];
+            $name = $_POST['title_videogame_update'];
+            $gender = $_POST['gender_videogame_update'];
+            $price = $_POST['price_videogame_update'];
+            $date = $_POST['release_date_videogame_update'];
+            $id = $_POST['id_videogame_update'];
             $data = array(
-                'title_videogameActualizar' => $nombre,
-                'gender_videogameActualizar' => $cantidad,
-                'price_videogameActualizar' => $precio,
-                'release_date_videogameActualizar' => $date,
-                'idVideogameActualizar' => $id
+                'title_videogame_update' => $name,
+                'gender_videogame_update' => $gender,
+                'price_videogame_update' => $price,
+                'release_date_videogame_update' => $date,
+                'id_videogame_update' => $id
             );
 
             require 'model/videogameDAO.php';
@@ -44,7 +44,7 @@
         }
 
         function delete(){
-            $id = $_POST['idEliminarVideogame'];
+            $id = $_POST['id_videogame_delete'];
 
             require 'model/videogameDAO.php';
             $this->loadModel('videogameDAO');
