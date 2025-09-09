@@ -1,10 +1,13 @@
 <?php
 
-    class Song extends Controller  {
+    class Song extends Controller 
+    
+    {
         function __construct()
         {
             parent::__construct();
         }
+        
         function index() {
             $this->view->render('song/index');
         }
