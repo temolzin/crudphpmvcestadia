@@ -283,6 +283,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="song" name="song" href="'.constant('URL').'song" class="nav-link">
+                              <i class="nav-icon fas fa-music"></i>
+                              <p>
+                                 Song
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="deporte" name="deporte" href="'.constant('URL').'deporte" class="nav-link">
                               <i class="nav-icon fas fa-futbol"></i>
                               <p>

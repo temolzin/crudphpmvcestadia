@@ -141,3 +141,11 @@ CREATE TABLE player (
     posicion_player VARCHAR(50),
     numero_camiseta INT
 );
+
+CREATE TABLE music (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    artist VARCHAR(100) NOT NULL,
+    album VARCHAR(100) NOT NULL,
+    year INT NOT NULL
+);
