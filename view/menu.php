@@ -371,6 +371,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="player" name="player" href="'.constant('URL').'player" class="nav-link">
+                              <i class="nav-icon fa fa-trophy"></i>
+                              <p>
+                                Jugador
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
                               <p>
