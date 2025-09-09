@@ -5,6 +5,7 @@ create table alumno (
     nombre_alumno varchar(30),
     apellidos_alumno varchar(30)
 );
+
 CREATE TABLE computer(
 	id_computer int primary key auto_increment,
 	name_computer varchar(30),
@@ -134,6 +135,14 @@ CREATE TABLE weather(
     name_weather varchar(50)
 );
 
+CREATE TABLE videogame(
+    id_videogame int primary key auto_increment,
+    title_videogame varchar(50),
+    gender_videogame varchar(50),
+    price_videogame int,
+    release_date_videogame DATE
+);
+
 CREATE TABLE player (
     id_player INT AUTO_INCREMENT PRIMARY KEY,
     first_name_player VARCHAR(100),
@@ -143,7 +152,6 @@ CREATE TABLE player (
     jersey_number_player INT
 );
 
-
 CREATE TABLE Makeup (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,         
@@ -152,5 +160,4 @@ CREATE TABLE Makeup (
     price DECIMAL(10,2) NOT NULL,       
     stock INT NOT NULL                   
 );
-
 
