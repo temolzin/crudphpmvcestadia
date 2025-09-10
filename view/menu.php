@@ -291,14 +291,6 @@
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a id="song" name="song" href="'.constant('URL').'song" class="nav-link">
-                              <i class="nav-icon fas fa-music"></i>
-                              <p>
-                                 Canciones
-                              </p>
-                            </a>
-                          </li>
-                          <li class="nav-item">
                             <a id="album" name="song" href="'.constant('URL').'song" class="nav-link">
                               <i class="nav-icon fas fa-music"></i>
                               <p>
