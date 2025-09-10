@@ -1,6 +1,5 @@
 create database estructuramvc;
 use estructuramvc;
-
 create table alumno (
     id_alumno int primary key auto_increment,
     nombre_alumno varchar(30),
@@ -8,26 +7,26 @@ create table alumno (
 );
 
 CREATE TABLE computer(
-    id_computer int primary key auto_increment,
-    name_computer varchar(30),
-    price_computer varchar(30),
-    model_computer varchar(30),
-    color_computer varchar(10)
+	id_computer int primary key auto_increment,
+	name_computer varchar(30),
+	price_computer varchar(30),
+	model_computer varchar(30),
+	color_computer varchar(10)
 );
 
 CREATE TABLE materia(
     id_materia int primary key auto_increment,
     nombre_materia varchar(50),
     grupo_materia varchar(50),
-    alumnos_materia int
+	alumnos_materia int
 );
 
 CREATE TABLE maestro(
-    id_maestro int primary key auto_increment,
-    nombre_maestro varchar(30),
-    apppat_maestro varchar(30),
-    appmat_maestro varchar(30),
-    edad_maestro varchar(2)
+	id_maestro int primary key auto_increment,
+	nombre_maestro varchar(30),
+	apppat_maestro varchar(30),
+	appmat_maestro varchar(30),
+	edad_maestro varchar(2)
 );
 
 CREATE TABLE categoria(
@@ -38,25 +37,25 @@ CREATE TABLE categoria(
 CREATE TABLE sucursal(
     id_sucursal int primary key auto_increment,
     nombre_sucursal varchar(50),
-    numero_sucursal varchar(30),
-    descripcion_sucursal varchar(50)
+	numero_sucursal varchar(30),
+	descripcion_sucursal varchar(50)
 );
 
 CREATE TABLE lenguajeProgramacion(
-    id_lenguajeProgramacion int primary key auto_increment,
-    nombre_lenguajeProgramacion varchar(50),
-    paradigma_lenguajeProgramacion varchar(50),
-    creador_lenguajeProgramacion varchar(50),
-    fecha_creacion_lenguajeProgramacion date
+	id_lenguajeProgramacion int primary key auto_increment,
+	nombre_lenguajeProgramacion varchar(50),
+	paradigma_lenguajeProgramacion varchar(50),
+	creador_lenguajeProgramacion varchar(50),
+	fecha_creacion_lenguajeProgramacion date
 );
 
 CREATE TABLE autos(
-    id_auto int primary key auto_increment,
-    marca_auto varchar(30),
-    modelo_auto varchar(30),
-    color_auto varchar(10),
-    anio_auto varchar(30),
-    precio_auto varchar(30)
+	id_auto int primary key auto_increment,
+	marca_auto varchar(30),
+	modelo_auto varchar(30),
+	color_auto varchar(10),
+	anio_auto varchar(30),
+	precio_auto varchar(30)
 );
 
 CREATE TABLE deporte(
@@ -69,57 +68,57 @@ CREATE TABLE deporte(
 CREATE TABLE pelicula(
     id_pelicula int primary key auto_increment,
     nombre_pelicula varchar(50),
-    genero varchar(30),
-    fecha_lanzamiento DATE,
-    descripcion varchar(100)
+	genero varchar(30),
+	fecha_lanzamiento DATE,
+	descripcion varchar(100)
 );
 
 CREATE TABLE plant(
-    plant_id int primary key auto_increment,
-    plant_name varchar(30),
-    plant_price varchar(4),
-    plant_availability varchar(30),
-    plant_size varchar(2)
+	plant_id int primary key auto_increment,
+	plant_name varchar(30),
+	plant_price varchar(4),
+	plant_availability varchar(30),
+	plant_size varchar(2)
 );
 
 CREATE TABLE perro(
-    id_perro int primary key auto_increment,
-    nombre_perro varchar(30),
-    raza_perro varchar(30),
-    edad_perro int (2),
-    sexo_perro varchar(10)
+	id_perro int primary key auto_increment,
+	nombre_perro varchar(30),
+	raza_perro varchar(30),
+	edad_perro int (2),
+	sexo_perro varchar(10)
 );
 
 CREATE TABLE mesa(
-    id_mesa int primary key auto_increment,
-    material varchar(30),
-    altura decimal(5,2),
-    acabado varchar(30),
-    precio decimal(9,2)
+	id_mesa int primary key auto_increment,
+	material varchar(30),
+	altura decimal(5,2),
+	acabado varchar(30),
+	precio decimal(9,2)
 );
 
 CREATE TABLE motos(
     id_moto int primary key auto_increment,
     marca varchar(50),
-    modelo varchar(30),
-    cc integer,
-    precio integer
+	modelo varchar(30),
+	cc integer,
+	precio integer
 );
 
 CREATE TABLE puerta(
-    puerta_id int primary key auto_increment,
-    puerta_material varchar(30),
-    puerta_precio decimal(9,2),
-    puerta_altura varchar(3),
-    puerta_anchura varchar(3)
+	puerta_id int primary key auto_increment,
+	puerta_material varchar(30),
+	puerta_precio decimal(9,2),
+	puerta_altura varchar(3),
+	puerta_anchura varchar(3)
 );
 
 CREATE TABLE celular(
-    celular_id int primary key auto_increment,
-    celular_marca varchar(30),
-    celular_precio decimal(9,2),
-    celular_imei varchar(16),
-    celular_almacenamiento varchar(16)
+	celular_id int primary key auto_increment,
+	celular_marca varchar(30),
+	celular_precio decimal(9,2),
+	celular_imei varchar(16),
+	celular_almacenamiento varchar(16)
 );
 
 CREATE TABLE dulce(
@@ -130,9 +129,19 @@ CREATE TABLE dulce(
     sabor_dulce varchar(50)
 );
 
+
 CREATE TABLE weather(
     id_weather int primary key auto_increment,
     name_weather varchar(50)
+);
+
+
+CREATE TABLE clothes(
+	id_clothes int primary key auto_increment,
+	products_clothes varchar(30),
+	categories_clothes varchar(30),
+	size_clothes varchar(30),
+	price_clothes decimal(9,2)
 );
 
 CREATE TABLE videogame(
@@ -141,14 +150,17 @@ CREATE TABLE videogame(
     gender_videogame varchar(50),
     price_videogame int,
     release_date_videogame DATE
+
 );
 
 CREATE TABLE player (
+    id_player INT AUTO_INCREMENT PRIMARY KEY,
     first_name_player VARCHAR(100),
     last_name_player VARCHAR(100),
     age_player INT,
     position_player VARCHAR(50),
     jersey_number_player INT
+
 );
 
 CREATE TABLE Makeup (
@@ -166,7 +178,7 @@ CREATE TABLE song(
     artist_song varchar(50),
     duration_song varchar(50),
     record_song varchar(50),
-    year_launch_song int
+	year_launch_song int
 );
 
 CREATE TABLE album (

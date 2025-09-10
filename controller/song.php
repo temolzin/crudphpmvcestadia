@@ -1,7 +1,7 @@
 <?php
 
-    class Song extends Controller 
-    
+    class Song extends Controller
+
     {
         function __construct()
         {
