@@ -28,7 +28,9 @@ class AlbumDAO extends Model implements CRUD
     {
         try {
             $query = $this->db->conectar()->prepare(
-                'UPDATE album SET title = :title, artist = :artist, album = :album, year = :year WHERE id = :id'
+                'UPDATE album 
+                 SET title = :title, artist = :artist, album = :album, year = :year 
+                 WHERE id = :id'
             );
             $query->execute([
                 ':id' => $data['idAlbum'],
@@ -56,23 +58,24 @@ class AlbumDAO extends Model implements CRUD
 
     public function read()
     {
-        require_once 'albumDTO.php'; // Cambiado de songDTO a albumDTO
         $query = "SELECT * FROM album";
-        $objAlbums = array();
         $result = $this->db->consultar($query);
+
         if (!is_array($result)) {
-            $result = [];
+            return [];
         }
-        foreach ($result as $key => $value) {
-            $album = new AlbumDTO(); // Cambiado de SongDTO a AlbumDTO
-            $album->id = $value['id'];
-            $album->title = $value['title'];
-            $album->artist = $value['artist'];
-            $album->album = $value['album'];
-            $album->year = $value['year'];
-            $objAlbums['data'][] = $album;
+
+        $albums = [];
+        foreach ($result as $value) {
+            $albums[] = [
+                "id"     => $value['id'],
+                "title"  => $value['title'],
+                "artist" => $value['artist'],
+                "album"  => $value['album'],
+                "year"   => $value['year']
+            ];
         }
-        echo json_encode($objAlbums, JSON_UNESCAPED_UNICODE);
+
+        return $albums;
     }
 }
-?>

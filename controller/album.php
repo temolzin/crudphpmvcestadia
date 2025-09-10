@@ -15,6 +15,7 @@ class Album extends Controller
         $artist = $_POST['artist'];
         $albumName = $_POST['album'];
         $year = $_POST['year'];
+
         $data = array(
             'title' => $title,
             'artist' => $artist,
@@ -26,6 +27,7 @@ class Album extends Controller
         $this->loadModel('AlbumDAO');
         $albumDAO = new AlbumDAO();
         $result = $albumDAO->insert($data);
+
         echo $result ? 'ok' : 'error';
     }
 
@@ -35,6 +37,7 @@ class Album extends Controller
         $artist = $_POST['artistUpdate'];
         $albumName = $_POST['albumUpdate'];
         $year = $_POST['yearUpdate'];
+
         $data = array(
             'idAlbum' => $idAlbum,
             'title' => $title,
@@ -42,10 +45,12 @@ class Album extends Controller
             'album' => $albumName,
             'year' => $year
         );
+
         require 'model/albumDAO.php';
         $this->loadModel('AlbumDAO');
         $albumDAO = new AlbumDAO();
         $result = $albumDAO->update($data);
+
         echo $result ? 'ok' : 'error';
     }
 
@@ -55,10 +60,12 @@ class Album extends Controller
             echo 'error';
             exit;
         }
+
         require 'model/albumDAO.php';
         $this->loadModel('AlbumDAO');
         $albumDAO = new AlbumDAO();
         $result = $albumDAO->delete($idAlbum);
+
         echo $result ? 'ok' : 'error';
     }
 
@@ -66,6 +73,9 @@ class Album extends Controller
         require 'model/albumDAO.php';
         $this->loadModel('AlbumDAO');
         $albumDAO = new AlbumDAO();
-        $albumDAO->read();
+        $data = $albumDAO->read();
+
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode(["data" => $data], JSON_UNESCAPED_UNICODE);
     }
 }

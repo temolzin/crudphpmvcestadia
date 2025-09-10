@@ -291,8 +291,8 @@
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a id="album" name="song" href="'.constant('URL').'song" class="nav-link">
-                              <i class="nav-icon fas fa-music"></i>
+                            <a id="album" name="album" href="'.constant('URL').'album" class="nav-link">
+                              <i class="nav-icon fas fa-record-vinyl"></i>
                               <p>
                                  Albumes
                               </p>
