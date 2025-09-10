@@ -180,3 +180,11 @@ CREATE TABLE song(
     record_song varchar(50),
 	  year_launch_song int
 );
+
+CREATE TABLE album (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    artist VARCHAR(100) NOT NULL,
+    album VARCHAR(100) NOT NULL,
+    year INT NOT NULL
+);
