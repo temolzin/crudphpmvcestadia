@@ -259,6 +259,14 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="madicine" name="medicine" href="'.constant('URL').'medicine" class="nav-link">
+                              <i class="nav-icon fas fa-solid fa-pills"></i>
+                              <p>
+                                Medicamentos
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a id="materia" name="materia" href="'.constant('URL').'materia" class="nav-link">
                               <i class="nav-icon fas fa-laptop"></i>
                               <p>
@@ -279,6 +287,14 @@
                               <i class="nav-icon fas fa-code"></i>
                               <p>
                                 Lenguaje de Programación
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="album" name="album" href="'.constant('URL').'album" class="nav-link">
+                              <i class="nav-icon fas fa-record-vinyl"></i>
+                              <p>
+                                 Albumes
                               </p>
                             </a>
                           </li>
@@ -347,6 +363,62 @@
                             </a>
                           </li>
                           <li class="nav-item">
+                            <a id="puerta" name="celular" href="'.constant('URL').'celular" class="nav-link">
+                              <i class="nav-icon fas fa-phone"></i>
+                              <p>
+                                Celular
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="dulce" name="dulce" href="'.constant('URL').'dulce" class="nav-link">
+                              <i class="nav-icon fas fa-ice-cream"></i>
+                              <p>
+                                Dulce
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="makeup" name="makeup" href="'.constant('URL').'makeup" class="nav-link">
+                              <i class="nav-icon fa fa-female"></i>
+                              <p>
+                                Maquillaje
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="weather" name="weather" href="'.constant('URL').'weather" class="nav-link">
+                              <i class="nav-icon fa fa-bolt"></i>
+                              <p>
+                                Clima
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="videogame" name="videogame" href="'.constant('URL').'videogame" class="nav-link">
+                              <i class="nav-icon fa fa-gamepad"></i>
+                              <p>
+                                Videojuego
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="player" name="player" href="'.constant('URL').'player" class="nav-link">
+                              <i class="nav-icon fa fa-trophy"></i>
+                              <p>
+                                Jugador
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="clothes" name="clothes" href="'.constant('URL').'clothes" class="nav-link">
+                              <i class="nav-icon fa fa fa-shopping-bag"></i>
+                              <p>
+                                Ropa
+                              </p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
                             <a href="pages/widgets.html" class="nav-link">
                               <i class="nav-icon fas fa-th"></i>
                               <p>
@@ -355,6 +427,14 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
+                            <a id="song" name="song" href="'.constant('URL').'song" class="nav-link">
+                              <i class="nav-icon fa fa-play"></i>
+                              <p>
+                                Cancion
+                              </p>
+                            </a>
+                          </li>                      
                           <li class="nav-item">
                             <a href="#" class="nav-link">
                               <i class="nav-icon fas fa-copy"></i>
