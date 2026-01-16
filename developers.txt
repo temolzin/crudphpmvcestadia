@@ -1,3 +1,5 @@
 //**** WELCOME DEVELOPERS! ****\\
 - Andrea Dominguez Zenteno
--Lopez Rendon Eric
+- Lopez Rendon Eric
+- Humberto López Zaragoza
+- Ian Nathan Rosas Casas
