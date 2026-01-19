@@ -1,6 +1,7 @@
 //**** WELCOME DEVELOPERS! ****\\
 - Andrea Dominguez Zenteno
 - Sebastian Fernández Gaenza 
+-Edwin Alexander Gonzalez Calva
 - Lopez Rendon Eric
 - Humberto López Zaragoza
 - Ian Nathan Rosas Casas
