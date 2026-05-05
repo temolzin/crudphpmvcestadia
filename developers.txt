@@ -1,5 +1,4 @@
 //**** WELCOME DEVELOPERS! ****\\
-
 - Andrea Dominguez Zenteno
 - Sebastian Fernández Gaenza 
 - Edwin Alexander Gonzalez Calva
