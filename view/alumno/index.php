@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-right">
-                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegistrarAlumno'> <i class="fas fa-plus-circle"></i> Registrar Alumno </button>
+                <button class="btn btn-success" data-toggle='modal' data-target='#modalRegistrarAlumno'> <i class="fas fa-plus-circle"></i> Registrar Alumno HOLA </button>
             </div>
         </div>
         <br>
